@@ -1,4 +1,5 @@
 import React from "react";
+import LoadingText from "./LoadingText";
 import BaseForm from "../images/BaseForm.png";
 import Super from "../images/Super.png";
 import UltraInstinct from "../images/UltraInstinct.png";
@@ -26,7 +27,7 @@ function Loading() {
           <img src={UltraInstinct} />
         </UIContainer>
       </NazGoku>
-      <LoadText>Loading ...</LoadText>
+      <LoadingText />
     </Container>
   );
 }
@@ -41,7 +42,6 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   color: black;
-  font-family: "Press Start 2P", cursive;
 `;
 
 const EvolveStart = keyframes`
@@ -76,23 +76,17 @@ const EvolveLast = keyframes`
 
 const Bounce = keyframes`
   0%,
-  20%,
   50%,
-  70%
   100% {
     transform: translateY(0);
   }
 
-  40% {
-    transform: translateY(6px);
+  25% {
+    transform: translateY(2px);
   }
 
-  60%{
-    transform: translateY(-4px);
-  }
-
-  80% {
-    transform: translateY(4px);
+  75%{
+    transform: translateY(-2px);
   }
 }
 `;
@@ -101,7 +95,7 @@ const NazGoku = styled.div`
   position: relative;
   height: 72px;
   width: 72px;
-  animation: ${Bounce} 1s infinite;
+  animation: ${Bounce} 0.3s infinite;
 `;
 
 const BaseContainer = styled.div`
@@ -136,9 +130,4 @@ const UIContainer = styled.div`
   position: absolute;
   animation: ${EvolveLast} 1s forwards;
   animation-delay: 2s;
-`;
-
-const LoadText = styled.div`
-  margin-top: 10px;
-  font-size: 16px;
 `;
