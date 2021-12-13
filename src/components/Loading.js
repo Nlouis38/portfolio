@@ -1,15 +1,21 @@
 import React from "react";
 import BaseForm from "../images/BaseForm.png";
-import styled from "styled-components";
+import Super from "../images/Super.png";
+import styled, { keyframes } from "styled-components";
 
 function Loading() {
   return (
     <Container>
-      <LoadBar>
-        <NazGoku>
+      <NazGoku>
+        <BaseContainer>
+          {" "}
           <img src={BaseForm} />
-        </NazGoku>
-      </LoadBar>
+        </BaseContainer>
+        <SuperContainer>
+          <img src={Super} />
+        </SuperContainer>
+      </NazGoku>
+      Loading ...
     </Container>
   );
 }
@@ -22,16 +28,28 @@ const Container = styled.div`
   width: 100vw;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  color: black;
+  font-family: "Press Start 2P", cursive;
 `;
 
-const NazGoku = styled.div``;
+const Evolve = keyframes`
+0%{
+    opacity:1;
+}
+100%{
+    opacity:0;
+}
+`;
 
-const LoadBar = styled.div`
-  display: flex;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-color: gray;
-  justify-content: center;
-  align-items: center;
+const NazGoku = styled.div`
+  position: relative;
+`;
+
+const BaseContainer = styled.div`
+  position: absolute;
+`;
+
+const SuperContainer = styled.div`
+  position: absoolute;
 `;
