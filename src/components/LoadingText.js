@@ -18,6 +18,7 @@ function LoadingText() {
         <P2 className="letter">.</P2>
         <P3 className="letter">.</P3>
       </LoadText>
+      <CompleteText></CompleteText>
     </TextContainer>
   );
 }
@@ -96,6 +97,8 @@ const P3 = styled.div`
 
 const LoadText = styled.div`
   display: flex;
-  margin-top: 10px;
+  margin-top: 15px;
   font-size: 16px;
 `;
+
+const CompleteText = styled.div``;

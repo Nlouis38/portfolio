@@ -5,12 +5,12 @@ function Landing() {
   return (
     <Container>
       <MainText>
-        <h1>Nazir Louis</h1>
-        <h2>Robotics Engineer Turned Software Developer</h2>
-        <p>
+        <Name>Nazir Louis</Name>
+        <SubHeading>Robotics Engineer Turned Software Engineer</SubHeading>
+        <About>
           ksjaf sajf kjsad fkjdsa ;kfjkdsajf kdjsa f;jkds;ajfk;sadj f;kjsad
           kf;jdsakfjksd;alj fkadjs kf;ldjsa f;kjdas k;fjdsaklf jadsk
-        </p>
+        </About>
       </MainText>
     </Container>
   );
@@ -19,21 +19,12 @@ function Landing() {
 export default Landing;
 
 const Container = styled.div`
+  padding: 20px;
   height: 100vh;
   width: 100vw;
-  background-color: black;
-  color: white;
-`;
-
-const SlideIn = keyframes`
-0%, 100%{
-    opactiy: 1;
-}
-
-50%{
-    opacity:0;
-}
-
+  background-color: gray;
+  color: black;
+  font-family: "Press Start 2P", cursive;
 `;
 
 const MainText = styled.div`
@@ -41,5 +32,17 @@ const MainText = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: ${SlideIn} 5s infinite;
+`;
+
+const Name = styled.div`
+  font-size: 32px;
+`;
+
+const SubHeading = styled.div`
+  font-size: 24px;
+`;
+
+const About = styled.div`
+  display: flex;
+  font-size: 16px;
 `;
