@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 function Landing() {
   return (
@@ -25,9 +25,21 @@ const Container = styled.div`
   color: white;
 `;
 
+const SlideIn = keyframes`
+0%, 100%{
+    opactiy: 1;
+}
+
+50%{
+    opacity:0;
+}
+
+`;
+
 const MainText = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: ${SlideIn} 5s infinite;
 `;
