@@ -11,7 +11,6 @@ function Loading() {
     <Container>
       <NazGoku>
         <BaseContainer>
-          {" "}
           <img src={BaseForm} />
         </BaseContainer>
         <SuperContainer>
@@ -79,7 +78,7 @@ const Bounce = keyframes`
   0%,
   20%,
   50%,
-  80%,
+  70%
   100% {
     transform: translateY(0);
   }
@@ -88,7 +87,11 @@ const Bounce = keyframes`
     transform: translateY(6px);
   }
 
-  60% {
+  60%{
+    transform: translateY(-4px);
+  }
+
+  80% {
     transform: translateY(4px);
   }
 }
@@ -104,37 +107,38 @@ const NazGoku = styled.div`
 const BaseContainer = styled.div`
   position: absolute;
   animation: ${EvolveStart} 1s forwards;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 `;
 
 const SuperContainer = styled.div`
   opacity: 0;
   position: absolute;
-  animation: ${Evolve} 2s;
-  animation-delay: 1s;
+  animation: ${Evolve} 1s;
+  animation-delay: 0.5s;
 `;
 
 const Super3Container = styled.div`
   opacity: 0;
   position: absolute;
-  animation: ${Evolve} 2s;
-  animation-delay: 2s;
+  animation: ${Evolve} 1s;
+  animation-delay: 1s;
 `;
 
 const SuperGodContainer = styled.div`
   opacity: 0;
   position: absolute;
-  animation: ${Evolve} 2s;
-  animation-delay: 3s;
+  animation: ${Evolve} 1s;
+  animation-delay: 1.5s;
 `;
 
 const UIContainer = styled.div`
   opacity: 0;
   position: absolute;
-  animation: ${EvolveLast} 2s forwards;
-  animation-delay: 4s;
+  animation: ${EvolveLast} 1s forwards;
+  animation-delay: 2s;
 `;
 
 const LoadText = styled.div`
   margin-top: 10px;
+  font-size: 16px;
 `;
