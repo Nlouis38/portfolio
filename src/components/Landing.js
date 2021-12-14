@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import "./Landing.css";
 import { ReactComponent as DownArrow } from "../images/down-arrow.svg";
@@ -13,7 +13,7 @@ function Landing() {
         </AvatarContainer>
         <Hello>Hello, my name is</Hello>
         <Name>Nazir Louis</Name>
-        <SubHeading>Robotics Engineer Turned Software Engineer</SubHeading>
+        <SubHeading>A Mechatronics Engineer turned Web Developer. </SubHeading>
       </MainText>
       <Footer>
         <FooterText>Learn More About What I Do</FooterText>
@@ -31,9 +31,9 @@ const Container = styled.div`
   justify-content: space-between;
   height: 100vh;
   width: 100vw;
-  background-color: gray;
   color: black;
-  font-family: "Press Start 2P", cursive;
+  position: absolute;
+  z-index: 1;
 `;
 
 const MainText = styled.div`
@@ -63,9 +63,12 @@ const Name = styled.div`
 `;
 
 const SubHeading = styled.div`
+  display: flex;
+  justify-content: center;
   font-size: 18px;
   color: black;
   margin-bottom: 20px;
+  width: 50vw;
 `;
 
 const Bounce = keyframes`
@@ -97,4 +100,5 @@ const Footer = styled.div`
 
 const FooterText = styled.div`
   font-size: 10px;
+  animation-delay: 5.5s;
 `;

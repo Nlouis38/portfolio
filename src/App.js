@@ -6,6 +6,7 @@ import Loading from "./components/Loading";
 function App() {
   return (
     <div className="App">
+      <Loading />
       <Landing />
     </div>
   );

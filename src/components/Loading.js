@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import LoadingText from "./LoadingText";
 import BaseForm from "../images/BaseForm.png";
 import Super from "../images/Super.png";
@@ -8,6 +8,7 @@ import SuperGod from "../images/SuperGod.png";
 import styled, { keyframes } from "styled-components";
 
 function Loading() {
+  const [Loading, setLoading] = useState(true);
   return (
     <Container>
       <NazGoku>
@@ -34,6 +35,15 @@ function Loading() {
 
 export default Loading;
 
+const Slide = keyframes`
+0%{
+  transform: translateY(0)
+}
+100%{
+  transform: translateY(-100%)
+}
+`;
+
 const Container = styled.div`
   display: flex;
   height: 100vh;
@@ -42,6 +52,10 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   color: black;
+  position: absolute;
+  z-index: 9;
+  animation: ${Slide} 1s ease-in forwards;
+  animation-delay: 5s;
 `;
 
 const EvolveStart = keyframes`
@@ -100,34 +114,34 @@ const NazGoku = styled.div`
 
 const BaseContainer = styled.div`
   position: absolute;
-  animation: ${EvolveStart} 1s forwards;
+  animation: ${EvolveStart} 1.5s forwards;
   animation-delay: 0.5s;
 `;
 
 const SuperContainer = styled.div`
   opacity: 0;
   position: absolute;
-  animation: ${Evolve} 1s;
+  animation: ${Evolve} 1.5s;
   animation-delay: 0.5s;
 `;
 
 const Super3Container = styled.div`
   opacity: 0;
   position: absolute;
-  animation: ${Evolve} 1s;
+  animation: ${Evolve} 1.5s;
   animation-delay: 1s;
 `;
 
 const SuperGodContainer = styled.div`
   opacity: 0;
   position: absolute;
-  animation: ${Evolve} 1s;
+  animation: ${Evolve} 1.5s;
   animation-delay: 1.5s;
 `;
 
 const UIContainer = styled.div`
   opacity: 0;
   position: absolute;
-  animation: ${EvolveLast} 1s forwards;
+  animation: ${EvolveLast} 1.5s forwards;
   animation-delay: 2s;
 `;
