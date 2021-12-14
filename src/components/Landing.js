@@ -1,23 +1,19 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import "./Landing.css";
-import { ReactComponent as DownArrow } from "../images/down-arrow.svg";
-import Avatar from "../images/Rage.png";
+import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 
 function Landing() {
   return (
     <Container>
       <MainText>
-        <AvatarContainer>
-          <img src={Avatar} border-radius="50" />
-        </AvatarContainer>
         <Hello>Hello, my name is</Hello>
         <Name>Nazir Louis</Name>
         <SubHeading>A Mechatronics Engineer turned Web Developer. </SubHeading>
       </MainText>
       <Footer>
         <FooterText>Learn More About What I Do</FooterText>
-        <DownArrow className="downArrow" />
+        <KeyboardDoubleArrowDownIcon className="downArrow" />
       </Footer>
     </Container>
   );
@@ -29,11 +25,12 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   color: black;
   position: absolute;
   z-index: 1;
+  font-family: "Press Start 2P", cursive;
 `;
 
 const MainText = styled.div`
@@ -43,12 +40,6 @@ const MainText = styled.div`
   align-items: center;
   max-width: 100vw;
   margin-top: 250px;
-`;
-
-const AvatarContainer = styled.div`
-  height: 112px;
-  width: 112px;
-  margin-bottom: 20px;
 `;
 
 const Hello = styled.div`
@@ -65,7 +56,7 @@ const Name = styled.div`
 const SubHeading = styled.div`
   display: flex;
   justify-content: center;
-  font-size: 18px;
+  font-size: 16px;
   color: black;
   margin-bottom: 20px;
   width: 50vw;
@@ -89,16 +80,27 @@ const Bounce = keyframes`
 }
 `;
 
+const SlideUp = keyframes`
+0%{
+  transform:translateY(100px)
+}
+
+100%{
+  transform:translateY(0)
+}`;
+
 const Footer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 10px;
-  animation: ${Bounce} 1s infinite;
+  animation: ${SlideUp} 1s 1s backwards;
+  .downArrow {
+    animation: ${Bounce} 1s 1.5s infinite;
+  }
 `;
 
 const FooterText = styled.div`
   font-size: 10px;
-  animation-delay: 5.5s;
 `;
