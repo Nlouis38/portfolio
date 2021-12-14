@@ -7,7 +7,9 @@ function Landing() {
   return (
     <Container>
       <MainText>
-        <Hello>Hello, my name is</Hello>
+        <Hold>
+          <Hello>Hello, my name is</Hello>
+        </Hold>
         <Name>Nazir Louis</Name>
         <SubHeading>A Mechatronics Engineer turned Web Developer. </SubHeading>
       </MainText>
@@ -42,16 +44,49 @@ const MainText = styled.div`
   margin-top: 250px;
 `;
 
+const TypeEffect = keyframes`
+  from { width: 0 }
+  to { width: 100% }
+`;
+
+const Hold = styled.div`
+  display: inline-block;
+`;
+
 const Hello = styled.div`
   font-size: 8px;
   color: #920060;
   margin-bottom: 20px;
+  overflow: hidden;
+  border-right: 0.15em solid black;
+  font-size: 8px;
+  width: 0;
+  white-space: nowrap;
+  animation: ${TypeEffect} 1s steps(20, end) forwards;
 `;
+
+const Show = keyframes`
+0%{
+  opacity:0;
+}
+100%{
+  opacity:1
+}`;
 
 const Name = styled.div`
   font-size: 24px;
   margin-bottom: 20px;
+  opacity: 0;
+  animation: ${Show} 2s 1.2s forwards;
 `;
+
+const SlideDown = keyframes`
+0%{
+  transform: translateY(-1000px);
+}
+100%{
+  transform:translateY(0);
+}`;
 
 const SubHeading = styled.div`
   display: flex;
@@ -59,7 +94,6 @@ const SubHeading = styled.div`
   font-size: 16px;
   color: black;
   margin-bottom: 20px;
-  width: 50vw;
 `;
 
 const Bounce = keyframes`
@@ -95,9 +129,9 @@ const Footer = styled.div`
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 10px;
-  animation: ${SlideUp} 1s 1s backwards;
+  animation: ${SlideUp} 1s 3s backwards;
   .downArrow {
-    animation: ${Bounce} 1s 1.5s infinite;
+    animation: ${Bounce} 1s 4s infinite;
   }
 `;
 

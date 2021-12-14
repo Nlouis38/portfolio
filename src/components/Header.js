@@ -36,6 +36,8 @@ const Logo = styled.div`
 const RightMenu = styled.div`
   color: black;
   display: flex;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
   div {
     padding: 0px 20px;
   }
