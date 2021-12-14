@@ -94,6 +94,7 @@ const SubHeading = styled.div`
   font-size: 16px;
   color: black;
   margin-bottom: 20px;
+  animation
 `;
 
 const Bounce = keyframes`

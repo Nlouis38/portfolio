@@ -1,7 +1,7 @@
 import React from "react";
 
 function Skills() {
-  return <div></div>;
+  return <div>Skills</div>;
 }
 
 export default Skills;
