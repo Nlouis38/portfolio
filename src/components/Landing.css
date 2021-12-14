@@ -1,3 +1,11 @@
 .text {
   line-height: 2;
 }
+
+.downArrow {
+  height: 50px;
+}
+
+img {
+  border-radius: 50%;
+}
