@@ -54,6 +54,39 @@ const Swing = keyframes`
     }
 `;
 
+const Shake = keyframes`
+    15%
+    {
+        transform: translateX(5px);
+        transform: translateY(5px);
+    }
+    30%
+    {
+        transform: translateX(-5px);
+        transform: translate3(-5px);
+    }
+    50%
+    {
+        transform: translateX(3px);
+        transform: translateY(3px);
+    }
+    65%
+    {
+        transform: translateX(-3px);
+        transform: translateY(-3px);
+    }
+    80%
+    {
+        transform: translateX(2px);
+        transform: translateY(2px);
+    }
+    100%
+    {
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+`;
+
 const Show = keyframes`
 0%{
   opacity:0;
@@ -80,7 +113,7 @@ const Nav = styled.div`
 
   img:hover {
     cursor: pointer;
-    animation: ${Swing} 1s ease;
+    animation: ${Shake} 0.5s ease;
   }
 `;
 
@@ -93,7 +126,7 @@ from{
   color:white;
 }
 to{
-  color:black;
+  color:#05142c;
 }`;
 
 const RightMenu = styled.div`
