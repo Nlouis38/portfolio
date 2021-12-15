@@ -9,5 +9,6 @@ export default Skills;
 
 const Container = styled.div`
   height: 100vh;
-  color: black;
+  color: white;
+  background-color: black;
 `;

@@ -4,7 +4,7 @@ import NazLogo from "../images/Logo1.png";
 
 function Header() {
   return (
-    <div>
+    <Wrap>
       <Nav>
         <Logo>
           <img src={NazLogo} />
@@ -17,11 +17,15 @@ function Header() {
           <div>Contact</div>
         </RightMenu>
       </Nav>
-    </div>
+    </Wrap>
   );
 }
 
 export default Header;
+
+const Wrap = styled.div`
+  position: absolute;
+`;
 
 const Swing = keyframes`
     15%
@@ -65,6 +69,10 @@ const Nav = styled.div`
   align-items: center;
   height: 10vh;
   opacity: 0;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  z-index: 2;
   animation: ${Show} 2s 4.5s forwards;
   img {
     height: 70px;
