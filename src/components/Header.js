@@ -1,11 +1,14 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
+import NazLogo from "../images/Logo1.png";
 
 function Header() {
   return (
     <div>
       <Nav>
-        <Logo>Nazir Louis</Logo>
+        <Logo>
+          <img src={NazLogo} />
+        </Logo>
         <RightMenu>
           <div>Skills</div>
           <div>Projects</div>
@@ -25,6 +28,13 @@ const Nav = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 10vh;
+  img {
+    height: 60px;
+  }
+
+  img:hover {
+    cursor: pointer;
+  }
 `;
 
 const Logo = styled.div`
@@ -33,16 +43,60 @@ const Logo = styled.div`
   font-size: 24px;
 `;
 
+const Swing = keyframes`
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+`;
+
+const Color = keyframes`
+from{
+  color:white;
+}
+to{
+  color:black;
+}`;
+
 const RightMenu = styled.div`
-  color: black;
+  color: white;
   display: flex;
   font-family: "Press Start 2P", cursive;
   font-size: 10px;
+  margin-right: 20px;
+
   div {
-    padding: 0px 20px;
+    padding: 10px;
   }
 
   div:hover {
     cursor: pointer;
+    animation: ${Swing} 1s ease, ${Color} 0.5s forwards;
   }
 `;

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import "./Landing.css";
-import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
+import DownArrow from "../images/DownArrow.png";
+import { Spring } from "react-spring";
 
 function Landing() {
   return (
@@ -10,12 +11,18 @@ function Landing() {
         <Hold>
           <Hello>Hello, my name is</Hello>
         </Hold>
-        <Name>Nazir Louis</Name>
-        <SubHeading>A Mechatronics Engineer turned Web Developer. </SubHeading>
+        <Hold>
+          <Name>Nazir Louis</Name>
+        </Hold>
+        <SubHeading className="subHeading">
+          A Mechatronics Engineer turned Web Developer.{" "}
+        </SubHeading>
       </MainText>
       <Footer>
-        <FooterText>Learn More About What I Do</FooterText>
-        <KeyboardDoubleArrowDownIcon className="downArrow" />
+        <FooterText>Here Is My Story</FooterText>
+        <DownArrowContainer>
+          <img src={DownArrow} height="50px" width="50px" />
+        </DownArrowContainer>
       </Footer>
     </Container>
   );
@@ -26,10 +33,9 @@ export default Landing;
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 90vh;
   width: 100vw;
-  color: black;
+  color: white;
   position: absolute;
   z-index: 1;
   font-family: "Press Start 2P", cursive;
@@ -41,7 +47,7 @@ const MainText = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 100vw;
-  margin-top: 250px;
+  margin-top: 400px;
 `;
 
 const TypeEffect = keyframes`
@@ -58,11 +64,10 @@ const Hello = styled.div`
   color: #920060;
   margin-bottom: 20px;
   overflow: hidden;
-  border-right: 0.15em solid black;
-  font-size: 8px;
+  font-size: 10px;
   width: 0;
   white-space: nowrap;
-  animation: ${TypeEffect} 1s steps(20, end) forwards;
+  animation: ${TypeEffect} 1.5s steps(20, end) forwards;
 `;
 
 const Show = keyframes`
@@ -76,8 +81,9 @@ const Show = keyframes`
 const Name = styled.div`
   font-size: 24px;
   margin-bottom: 20px;
-  opacity: 0;
-  animation: ${Show} 2s 1.2s forwards;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: ${TypeEffect} 1.5s 1.5s steps(20, end) backwards;
 `;
 
 const SlideDown = keyframes`
@@ -92,7 +98,6 @@ const SubHeading = styled.div`
   display: flex;
   justify-content: center;
   font-size: 16px;
-  color: black;
   margin-bottom: 20px;
   animation
 `;
@@ -117,7 +122,7 @@ const Bounce = keyframes`
 
 const SlideUp = keyframes`
 0%{
-  transform:translateY(100px)
+  transform:translateY(100%)
 }
 
 100%{
@@ -129,13 +134,14 @@ const Footer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  margin-bottom: 10px;
-  animation: ${SlideUp} 1s 3s backwards;
-  .downArrow {
-    animation: ${Bounce} 1s 4s infinite;
-  }
+  height: 320px;
+  margin-bottom: 15px;
+  opacity: 0;
+  animation: ${Show} 2s 4s forwards, ${Bounce} 1s 4s infinite;
 `;
 
 const FooterText = styled.div`
   font-size: 10px;
 `;
+
+const DownArrowContainer = styled.div``;
