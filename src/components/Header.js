@@ -23,57 +23,61 @@ function Header() {
 
 export default Header;
 
+const Swing = keyframes`
+    15%
+    {
+        transform: translateX(5px);
+    }
+    30%
+    {
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        transform: translateX(3px);
+    }
+    65%
+    {
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        transform: translateX(2px);
+    }
+    100%
+    {
+        transform: translateX(0);
+    }
+`;
+
+const Show = keyframes`
+0%{
+  opacity:0;
+}
+100%{
+  opacity:1
+}`;
+
 const Nav = styled.div`
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
   align-items: center;
   height: 10vh;
+  opacity: 0;
+  animation: ${Show} 2s 4.5s forwards;
   img {
-    height: 60px;
+    height: 70px;
   }
 
   img:hover {
     cursor: pointer;
+    animation: ${Swing} 1s ease;
   }
 `;
 
 const Logo = styled.div`
   margin-left: 20px;
-  font-family: "Herr Von Muellerhoff", cursive;
-  font-size: 24px;
-`;
-
-const Swing = keyframes`
-    15%
-    {
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
-    }
-    30%
-    {
-        -webkit-transform: translateX(-5px);
-        transform: translateX(-5px);
-    }
-    50%
-    {
-        -webkit-transform: translateX(3px);
-        transform: translateX(3px);
-    }
-    65%
-    {
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-    }
-    80%
-    {
-        -webkit-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-    100%
-    {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
 `;
 
 const Color = keyframes`
@@ -88,7 +92,7 @@ const RightMenu = styled.div`
   color: white;
   display: flex;
   font-family: "Press Start 2P", cursive;
-  font-size: 10px;
+  font-size: 12px;
   margin-right: 20px;
 
   div {

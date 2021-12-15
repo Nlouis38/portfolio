@@ -14,9 +14,7 @@ function Landing() {
         <Hold>
           <Name>Nazir Louis</Name>
         </Hold>
-        <SubHeading className="subHeading">
-          A Mechatronics Engineer turned Web Developer.{" "}
-        </SubHeading>
+        <SubHeading>A Mechatronics Engineer turned Web Developer</SubHeading>
       </MainText>
       <Footer>
         <FooterText>Here Is My Story</FooterText>
@@ -94,12 +92,29 @@ const SlideDown = keyframes`
   transform:translateY(0);
 }`;
 
+const Blur = keyframes`
+from{
+  opacity:0;
+  filter:blur(20px);
+}
+to{
+  opacity:1;
+  filter:blur(0px);
+}`;
+
 const SubHeading = styled.div`
   display: flex;
   justify-content: center;
   font-size: 16px;
   margin-bottom: 20px;
-  animation
+  opacity: 0;
+  filter: blur(20px);
+  animation: ${Blur} 1s 3s forwards;
+`;
+
+const Web = styled.div`
+  color: black;
+  margin-left: 15px;
 `;
 
 const Bounce = keyframes`
@@ -120,15 +135,6 @@ const Bounce = keyframes`
 }
 `;
 
-const SlideUp = keyframes`
-0%{
-  transform:translateY(100%)
-}
-
-100%{
-  transform:translateY(0)
-}`;
-
 const Footer = styled.div`
   display: flex;
   flex-direction: column;
@@ -137,7 +143,7 @@ const Footer = styled.div`
   height: 320px;
   margin-bottom: 15px;
   opacity: 0;
-  animation: ${Show} 2s 4s forwards, ${Bounce} 1s 4s infinite;
+  animation: ${Show} 2s 4.4s forwards, ${Bounce} 1s 4s infinite;
 `;
 
 const FooterText = styled.div`
