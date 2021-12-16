@@ -6,7 +6,7 @@ import { Spring } from "react-spring";
 
 function Landing() {
   return (
-    <Container>
+    <Container className="container">
       <MainText>
         <Hold>
           <Hello>Hello, my name is</Hello>
@@ -34,9 +34,8 @@ const Container = styled.div`
   height: 90vh;
   width: 100vw;
   color: white;
-  position: absolute;
-  z-index: 1;
   font-family: "Press Start 2P", cursive;
+  z-index: 1;
 `;
 
 const MainText = styled.div`
@@ -45,7 +44,7 @@ const MainText = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 100vw;
-  margin-top: 400px;
+  margin-top: 28%;
 `;
 
 const TypeEffect = keyframes`
@@ -59,7 +58,7 @@ const Hold = styled.div`
 
 const Hello = styled.div`
   font-size: 8px;
-  color: #920060;
+  color: #9faabb;
   margin-bottom: 20px;
   overflow: hidden;
   font-size: 10px;
