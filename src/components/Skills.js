@@ -7,6 +7,7 @@ import PsychologyIcon from "@mui/icons-material/Psychology";
 function Skills() {
   return (
     <Container>
+      <Title>SKILLS</Title>
       <SkillsList>
         <FrontEnd>
           <div>
@@ -70,10 +71,21 @@ to{
 `;
 
 const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100vh;
   width: 100vw;
   color: white;
   background-color: #04142d;
+`;
+
+const Title = styled.div`
+  margin-top: 50px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 24px;
+  opacity: 0;
+  animation: ${SlideRight} 2s forwards;
 `;
 
 const SkillsList = styled.ul`
@@ -98,9 +110,9 @@ const FrontEnd = styled.ul`
   height: 450px;
   border-radius: 10px;
   min-width: 200px;
-  margin: 100px 20px;
+  margin: 20px 20px;
   opacity: 0;
-  animation: ${SlideRight} 2s 1s forwards;
+  animation: ${SlideRight} 2s 1.5s forwards;
   div {
     display: flex;
     align-items: center;
@@ -135,7 +147,7 @@ const BackEnd = styled.ul`
   min-width: 200px;
   margin: 25px 0px;
   opacity: 0;
-  animation: ${SlideRight} 2s forwards;
+  animation: ${SlideRight} 2s 0.5s forwards;
   div {
     display: flex;
     align-items: center;
@@ -165,7 +177,7 @@ const General = styled.ul`
   min-width: 200px;
   margin: 25px 0px;
   opacity: 0;
-  animation: ${SlideRight} 2s 0.5s forwards;
+  animation: ${SlideRight} 2s 1s forwards;
   div {
     display: flex;
     align-items: center;
