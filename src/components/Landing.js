@@ -143,7 +143,7 @@ const Footer = styled.div`
   height: 320px;
   margin-bottom: 15px;
   opacity: 0;
-  animation: ${Show} 2s 4.4s forwards, ${Bounce} 1s 4s infinite;
+  animation: ${Show} 2s 4s forwards, ${Bounce} 1s 4s infinite;
 `;
 
 const FooterText = styled.div`

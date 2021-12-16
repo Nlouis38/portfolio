@@ -65,7 +65,7 @@ const Nav = styled.div`
   align-items: center;
   height: 10vh;
   opacity: 0;
-  animation: ${Show} 2s 4.5s forwards;
+  animation: ${Show} 2s 4.2s forwards;
   img {
     height: 70px;
   }
