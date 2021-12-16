@@ -36,6 +36,7 @@ const Container = styled.div`
   color: white;
   font-family: "Press Start 2P", cursive;
   z-index: 1;
+  max-width: 100%;
 `;
 
 const MainText = styled.div`

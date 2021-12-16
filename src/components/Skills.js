@@ -78,6 +78,7 @@ const Container = styled.div`
   width: 100vw;
   color: white;
   background-color: #04142d;
+  max-width: 100%;
 `;
 
 const Title = styled.div`

@@ -25,6 +25,8 @@ export default Header;
 
 const Wrap = styled.div`
   position: absolute;
+  width: 100vw;
+  max-width: 100%;
 `;
 
 const Swing = keyframes`
@@ -107,6 +109,7 @@ const Nav = styled.div`
   width: 100vw;
   z-index: 2;
   animation: ${Show} 2s 4.5s forwards;
+  max-width: 100%;
   img {
     height: 70px;
   }
