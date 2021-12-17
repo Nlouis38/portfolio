@@ -7,55 +7,65 @@ import PsychologyIcon from "@mui/icons-material/Psychology";
 function Skills() {
   return (
     <Container>
-      <Title>SKILLS</Title>
-      <SkillsList>
-        <FrontEnd>
-          <div>
-            Front-End
-            <WebIcon />
-          </div>
-          <ul>
-            <li>React.js</li>
-            <li>Redux</li>
-            <li>Styled Components</li>
-            <li>Material UI</li>
-            <li>Javascript</li>
-            <li>Flex Box</li>
-            <li>CSS Grid</li>
-            <li>CSS</li>
-            <li>HTML</li>
-          </ul>
-        </FrontEnd>
-        <Hold>
-          <BackEnd>
+      <Hold2>
+        <Title>SKILLS</Title>
+        <SkillsList>
+          <FrontEnd>
             <div>
-              Back-End
-              <StorageIcon />
+              Front-End
+              <WebIcon />
             </div>
             <ul>
-              <li>Node.js</li>
-              <li>Python</li>
-              <li>C++</li>
+              <li>React.js</li>
+              <li>Redux</li>
+              <li>Styled Components</li>
+              <li>Material UI</li>
+              <li>Javascript</li>
+              <li>Flex Box</li>
+              <li>CSS Grid</li>
+              <li>CSS</li>
+              <li>HTML</li>
             </ul>
-          </BackEnd>
-          <General>
-            <div>
-              General
-              <PsychologyIcon />
-            </div>
-            <ul>
-              <li>Git Version Control</li>
-              <li>Machine Learning</li>
-              <li>Computer Vision</li>
-            </ul>
-          </General>
-        </Hold>
-      </SkillsList>
+          </FrontEnd>
+          <Hold>
+            <BackEnd>
+              <div>
+                Back-End
+                <StorageIcon />
+              </div>
+              <ul>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>C++</li>
+              </ul>
+            </BackEnd>
+            <General>
+              <div>
+                General
+                <PsychologyIcon />
+              </div>
+              <ul>
+                <li>Git Version Control</li>
+                <li>Machine Learning</li>
+                <li>Computer Vision</li>
+              </ul>
+            </General>
+          </Hold>
+        </SkillsList>
+      </Hold2>
     </Container>
   );
 }
 
 export default Skills;
+
+const Hold2 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+`;
 
 const SlideRight = keyframes`
 from{
@@ -79,10 +89,12 @@ const Container = styled.div`
   color: white;
   background-color: #04142d;
   max-width: 100%;
+  min-height: 600px;
+  mar
 `;
 
 const Title = styled.div`
-  margin-top: 50px;
+  margin-top: ;
   font-family: "Press Start 2P", cursive;
   font-size: 24px;
   opacity: 0;
@@ -91,7 +103,6 @@ const Title = styled.div`
 
 const SkillsList = styled.ul`
   display: flex;
-  justify-content: center;
   list-style: none;
   align-items: center;
   li {
@@ -110,7 +121,7 @@ const FrontEnd = styled.ul`
   width: 300px;
   height: 450px;
   border-radius: 10px;
-  min-width: 200px;
+  min-width: 150px;
   margin: 20px 20px;
   opacity: 0;
   animation: ${SlideRight} 2s 1.5s forwards;
@@ -145,7 +156,7 @@ const BackEnd = styled.ul`
   width: 300px;
   height: 200px;
   border-radius: 10px;
-  min-width: 200px;
+  min-width: 150px;
   margin: 25px 0px;
   opacity: 0;
   animation: ${SlideRight} 2s 0.5s forwards;
@@ -175,7 +186,7 @@ const General = styled.ul`
   width: 300px;
   height: 200px;
   border-radius: 10px;
-  min-width: 200px;
+  min-width: 150px;
   margin: 25px 0px;
   opacity: 0;
   animation: ${SlideRight} 2s 1s forwards;
