@@ -10,9 +10,9 @@ function Skills() {
   return (
     <Container>
       <Hold2>
-        <Title data-aos="flip-left">SKILLS</Title>
+        <Title data-aos="fade-right">SKILLS</Title>
         <SkillsList>
-          <FrontEnd>
+          <FrontEnd data-aos="fade-right" data-aos-delay="750">
             <div>
               Front-End
               <WebIcon />
@@ -30,7 +30,7 @@ function Skills() {
             </ul>
           </FrontEnd>
           <Hold>
-            <BackEnd>
+            <BackEnd data-aos="fade-right" data-aos-delay="250">
               <div>
                 Back-End
                 <StorageIcon />
@@ -41,7 +41,7 @@ function Skills() {
                 <li>C++</li>
               </ul>
             </BackEnd>
-            <General>
+            <General data-aos="fade-right" data-aos-delay="500">
               <div>
                 General
                 <PsychologyIcon />
@@ -67,19 +67,6 @@ const Hold2 = styled.div`
   align-items: center;
   flex-direction: column;
   height: 100vh;
-`;
-
-const SlideRight = keyframes`
-from{
-  opacity:0;
-  transform:translateX(-100px);
-}
-
-to{
-  opacity:1;
-  transform:translateX(0)
-}
-
 `;
 
 const Container = styled.div`

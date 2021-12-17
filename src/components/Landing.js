@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import "./Landing.css";
 import DownArrow from "../images/DownArrow.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Landing() {
   return (
