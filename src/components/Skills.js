@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled, { keyframes } from "styled-components";
 import WebIcon from "@mui/icons-material/Web";
 import StorageIcon from "@mui/icons-material/Storage";
 import PsychologyIcon from "@mui/icons-material/Psychology";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Skills() {
   return (
     <Container>
       <Hold2>
-        <Title>SKILLS</Title>
+        <Title data-aos="flip-left">SKILLS</Title>
         <SkillsList>
           <FrontEnd>
             <div>
@@ -97,8 +99,6 @@ const Title = styled.div`
   margin-top: ;
   font-family: "Press Start 2P", cursive;
   font-size: 24px;
-  opacity: 0;
-  animation: ${SlideRight} 2s forwards;
 `;
 
 const SkillsList = styled.ul`
@@ -123,8 +123,6 @@ const FrontEnd = styled.ul`
   border-radius: 10px;
   min-width: 150px;
   margin: 20px 20px;
-  opacity: 0;
-  animation: ${SlideRight} 2s 1.5s forwards;
   div {
     display: flex;
     align-items: center;
@@ -158,8 +156,6 @@ const BackEnd = styled.ul`
   border-radius: 10px;
   min-width: 150px;
   margin: 25px 0px;
-  opacity: 0;
-  animation: ${SlideRight} 2s 0.5s forwards;
   div {
     display: flex;
     align-items: center;
@@ -188,8 +184,6 @@ const General = styled.ul`
   border-radius: 10px;
   min-width: 150px;
   margin: 25px 0px;
-  opacity: 0;
-  animation: ${SlideRight} 2s 1s forwards;
   div {
     display: flex;
     align-items: center;

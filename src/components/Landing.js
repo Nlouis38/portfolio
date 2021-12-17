@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import "./Landing.css";
 import DownArrow from "../images/DownArrow.png";
-import { Spring } from "react-spring";
 
 function Landing() {
   return (
