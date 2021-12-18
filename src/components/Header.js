@@ -121,9 +121,7 @@ const Nav = styled.div`
   }
 `;
 
-const Logo = styled.div`
-  margin-left: 20px;
-`;
+const Logo = styled.div``;
 
 const Color = keyframes`
 from{
@@ -151,6 +149,14 @@ const RightMenu = styled.div`
     @media (min-width: 700px) {
       display: none;
     }
+  }
+
+  .menuIcon:hover {
+    cursor: pointer;
+  }
+
+  .menuIcon:active {
+    transform: scale(0.9, 0.9);
   }
 
   div:hover {

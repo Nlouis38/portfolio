@@ -68,6 +68,9 @@ const Hello = styled.div`
   width: 0;
   white-space: nowrap;
   animation: ${TypeEffect} 1.5s steps(20, end) forwards;
+  @media (max-width: 705px) {
+    font-size: 8px;
+  }
 `;
 
 const Show = keyframes`
@@ -84,6 +87,9 @@ const Name = styled.div`
   overflow: hidden;
   white-space: nowrap;
   animation: ${TypeEffect} 1.5s 1.5s steps(20, end) backwards;
+  @media (max-width: 705px) {
+    font-size: 16px;
+  }
 `;
 
 const SlideDown = keyframes`
@@ -112,6 +118,9 @@ const SubHeading = styled.div`
   opacity: 0;
   filter: blur(20px);
   animation: ${Blur} 1s 3s forwards;
+  @media (max-width: 705px) {
+    font-size: 10px;
+  }
 `;
 
 const Web = styled.div`
