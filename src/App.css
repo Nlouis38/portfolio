@@ -2,12 +2,3 @@
   margin: 0;
   padding: 0;
 }
-
-.box {
-  height: 150px;
-  width: 500px;
-  margin: 20px;
-  margin-top: 150px;
-  background-color: blue;
-  border-radius: 10px;
-}

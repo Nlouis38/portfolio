@@ -36,17 +36,18 @@ const Container = styled.div`
   width: 100vw;
   color: white;
   font-family: "Press Start 2P", cursive;
-  z-index: 1;
   max-width: 100%;
+  overflow-x: hidden;
 `;
 
 const MainText = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  max-width: 100vw;
-  margin-top: 28%;
+  top: 50%;
+  width: 100vw;
+  height: 100vh;
+  justify-content: flex-end;
 `;
 
 const TypeEffect = keyframes`
@@ -106,6 +107,8 @@ to{
 const SubHeading = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   font-size: 16px;
   margin-bottom: 20px;
   opacity: 0;
@@ -142,7 +145,7 @@ const Footer = styled.div`
   justify-content: flex-end;
   align-items: center;
   height: 320px;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
   opacity: 0;
   animation: ${Show} 2s 4s forwards, ${Bounce} 1s 4s infinite;
 `;

@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Landing from "./components/Landing";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -18,6 +19,7 @@ function App() {
       <Header />
       <Landing />
       <Skills />
+      <Projects />
     </div>
   );
 }

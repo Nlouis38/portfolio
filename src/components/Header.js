@@ -107,7 +107,6 @@ const Nav = styled.div`
   position: sticky;
   top: 0;
   width: 100vw;
-  z-index: 2;
   animation: ${Show} 2s 4.5s forwards;
   max-width: 100%;
   img {

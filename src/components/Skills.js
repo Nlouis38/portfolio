@@ -5,85 +5,79 @@ import StorageIcon from "@mui/icons-material/Storage";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "./Skills.css";
 
 function Skills() {
   return (
     <Container>
-      <Hold2>
-        <Title data-aos="fade-right">SKILLS</Title>
-        <SkillsList>
-          <FrontEnd data-aos="fade-right" data-aos-delay="750">
+      <Title data-aos="fade-right" className="title">
+        SKILLS
+      </Title>
+      <SkillsList className="skillList">
+        <FrontEnd
+          className="frontEnd"
+          data-aos="fade-right"
+          data-aos-delay="750"
+        >
+          <div>
+            Front-End
+            <WebIcon />
+          </div>
+          <ul>
+            <li>React.js</li>
+            <li>Redux</li>
+            <li>Styled Components</li>
+            <li>Material UI</li>
+            <li>Javascript</li>
+            <li>Flex Box</li>
+            <li>CSS Grid</li>
+            <li>CSS</li>
+            <li>HTML</li>
+          </ul>
+        </FrontEnd>
+        <Hold>
+          <BackEnd data-aos="fade-right" data-aos-delay="250">
             <div>
-              Front-End
-              <WebIcon />
+              Back-End
+              <StorageIcon />
             </div>
             <ul>
-              <li>React.js</li>
-              <li>Redux</li>
-              <li>Styled Components</li>
-              <li>Material UI</li>
-              <li>Javascript</li>
-              <li>Flex Box</li>
-              <li>CSS Grid</li>
-              <li>CSS</li>
-              <li>HTML</li>
+              <li>Node.js</li>
+              <li>Python</li>
+              <li>C++</li>
             </ul>
-          </FrontEnd>
-          <Hold>
-            <BackEnd data-aos="fade-right" data-aos-delay="250">
-              <div>
-                Back-End
-                <StorageIcon />
-              </div>
-              <ul>
-                <li>Node.js</li>
-                <li>Python</li>
-                <li>C++</li>
-              </ul>
-            </BackEnd>
-            <General data-aos="fade-right" data-aos-delay="500">
-              <div>
-                General
-                <PsychologyIcon />
-              </div>
-              <ul>
-                <li>Git Version Control</li>
-                <li>Machine Learning</li>
-                <li>Computer Vision</li>
-              </ul>
-            </General>
-          </Hold>
-        </SkillsList>
-      </Hold2>
+          </BackEnd>
+          <General data-aos="fade-right" data-aos-delay="500">
+            <div>
+              General
+              <PsychologyIcon />
+            </div>
+            <ul>
+              <li>Git Version Control</li>
+              <li>Machine Learning</li>
+              <li>Computer Vision</li>
+            </ul>
+          </General>
+        </Hold>
+      </SkillsList>
     </Container>
   );
 }
 
 export default Skills;
 
-const Hold2 = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-`;
-
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  justify-content: center;
   width: 100vw;
   color: white;
-  background-color: #04142d;
   max-width: 100%;
-  min-height: 600px;
-  mar
+  overflow-x: hidden;
 `;
 
 const Title = styled.div`
-  margin-top: ;
   font-family: "Press Start 2P", cursive;
   font-size: 24px;
 `;
@@ -108,7 +102,6 @@ const FrontEnd = styled.ul`
   width: 300px;
   height: 450px;
   border-radius: 10px;
-  min-width: 150px;
   margin: 20px 20px;
   div {
     display: flex;
@@ -141,7 +134,6 @@ const BackEnd = styled.ul`
   width: 300px;
   height: 200px;
   border-radius: 10px;
-  min-width: 150px;
   margin: 25px 0px;
   div {
     display: flex;
@@ -169,7 +161,6 @@ const General = styled.ul`
   width: 300px;
   height: 200px;
   border-radius: 10px;
-  min-width: 150px;
   margin: 25px 0px;
   div {
     display: flex;
