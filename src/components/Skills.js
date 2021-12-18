@@ -80,12 +80,15 @@ const Container = styled.div`
 const Title = styled.div`
   font-family: "Press Start 2P", cursive;
   font-size: 24px;
+  margin-top: 50px;
 `;
 
 const SkillsList = styled.ul`
   display: flex;
   list-style: none;
   align-items: center;
+
+  margin-bottom: 100px;
   li {
     list-style: none;
     font-family: "Bakbak One", cursive;

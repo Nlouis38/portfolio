@@ -106,8 +106,6 @@ to{
 
 const SubHeading = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   font-size: 16px;
   margin-bottom: 20px;

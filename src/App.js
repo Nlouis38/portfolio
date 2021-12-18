@@ -20,6 +20,8 @@ function App() {
       <Landing />
       <Skills />
       <Projects />
+      <Projects />
+      <Projects />
     </div>
   );
 }

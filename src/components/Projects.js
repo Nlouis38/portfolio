@@ -1,45 +1,46 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { Skeleton } from "@mui/material";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./Projects.css";
 
 function Projects() {
   return (
-    <Container>
-      <Text>
+    <Container className="projectContainer">
+      <Text className="text">
         <Skeleton
+          data-aos="fade-right"
           className="text"
           variant="rectangular"
           width={400}
           height={50}
         />
         <Skeleton
+          data-aos="fade-right"
           className="text"
           variant="rectangular"
           width={400}
           height={300}
         />
-        <Buttons>
+        <Buttons data-aos="zoom-out">
           <SourceBtn>Source Code</SourceBtn>
           <DemoBtn>Demo</DemoBtn>
         </Buttons>
       </Text>
       <Content>
         <Skeleton
+          data-aos="flip-up"
           className="image"
           variant="rectangular"
-          width={300}
+          width={500}
           height={300}
         />
         <Skeleton
+          data-aos="flip-down"
           className="image"
           variant="rectangular"
-          width={300}
-          height={300}
-        />
-        <Skeleton
-          className="image"
-          variant="rectangular"
-          width={300}
+          width={500}
           height={300}
         />
       </Content>
@@ -51,20 +52,17 @@ export default Projects;
 
 const Container = styled.div`
   width: 100vw;
-  height: 100vh;
   color: white;
   max-width: 100%;
   overflow-x: hidden;
-  background-color: red;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 `;
 
 const Text = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
   .text {
     margin: 10px;
   }
@@ -91,6 +89,9 @@ const SourceBtn = styled.div`
   :hover {
     cursor: pointer;
   }
+  :active {
+    transform: scale(0.9, 0.9);
+  }
 `;
 
 const DemoBtn = styled.div`
@@ -105,12 +106,16 @@ const DemoBtn = styled.div`
   :hover {
     cursor: pointer;
   }
+  :active {
+    transform: scale(0.9, 0.9);
+  }
 `;
 
 const Content = styled.div`
   display: flex;
   flex-direction: column;
-
+  justify-content: space-evenly;
+  margin-bottom: 100px;
   .image {
     margin: 10px;
   }

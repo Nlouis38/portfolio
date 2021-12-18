@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import NazLogo from "../images/Logo1.png";
+import MenuIcon from "@mui/icons-material/Menu";
 
 function Header() {
   return (
@@ -15,6 +16,7 @@ function Header() {
           <div>Resume</div>
           <div>About Me</div>
           <div>Contact</div>
+          <MenuIcon className="menuIcon" />
         </RightMenu>
       </Nav>
     </Wrap>
@@ -140,6 +142,15 @@ const RightMenu = styled.div`
 
   div {
     padding: 10px;
+    @media (max-width: 699px) {
+      display: none;
+    }
+  }
+
+  .menuIcon {
+    @media (min-width: 700px) {
+      display: none;
+    }
   }
 
   div:hover {
