@@ -23,9 +23,9 @@ function Projects() {
           width={400}
           height={300}
         />
-        <Buttons data-aos="zoom-out">
-          <SourceBtn>Source Code</SourceBtn>
-          <DemoBtn>Demo</DemoBtn>
+        <Buttons>
+          <SourceBtn data-aos="zoom-out">Source Code</SourceBtn>
+          <DemoBtn data-aos="zoom-out">Demo</DemoBtn>
         </Buttons>
       </Text>
       <Content>
@@ -75,6 +75,11 @@ const Buttons = styled.div`
   width: 420px;
   font-family: "Bakbak One", cursive;
   font-size: 22px;
+
+  @media (max-width: 450px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const SourceBtn = styled.div`
@@ -86,6 +91,9 @@ const SourceBtn = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 450px) {
+    width: 300px;
+  }
   :hover {
     cursor: pointer;
   }
@@ -103,6 +111,9 @@ const DemoBtn = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 450px) {
+    width: 300px;
+  }
   :hover {
     cursor: pointer;
   }
