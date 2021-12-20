@@ -5,44 +5,20 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Projects.css";
 
-function Projects() {
+function Projects({ title, details, image1, video1 }) {
   return (
     <Container className="projectContainer">
       <Text className="text">
-        <Skeleton
-          data-aos="fade-right"
-          className="text"
-          variant="rectangular"
-          width={400}
-          height={50}
-        />
-        <Skeleton
-          data-aos="fade-right"
-          className="text"
-          variant="rectangular"
-          width={400}
-          height={300}
-        />
-        <Buttons>
-          <SourceBtn data-aos="zoom-out">Source Code</SourceBtn>
-          <DemoBtn data-aos="zoom-out">Demo</DemoBtn>
-        </Buttons>
+        <h1>{title}</h1>
+        <p>{details}</p>
       </Text>
+      <Buttons>
+        <SourceBtn data-aos="zoom-out">Source Code</SourceBtn>
+        <DemoBtn data-aos="zoom-out">Demo</DemoBtn>
+      </Buttons>
       <Content>
-        <Skeleton
-          data-aos="flip-up"
-          className="image"
-          variant="rectangular"
-          width={500}
-          height={300}
-        />
-        <Skeleton
-          data-aos="flip-down"
-          className="image"
-          variant="rectangular"
-          width={500}
-          height={300}
-        />
+        <img src={image1} />
+        <img src={video1} />
       </Content>
     </Container>
   );

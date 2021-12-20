@@ -16,7 +16,12 @@ function App() {
 
   return (
     <div className="App">
-      <Projects />
+      <Projects
+        title="Tesla Clone"
+        details="dsfadfasdfsafdsa"
+        image1=""
+        video1=""
+      />
     </div>
   );
 }
