@@ -17,7 +17,7 @@ function Projects({ title, details, image1, video1 }) {
         <DemoBtn data-aos="zoom-out">Demo</DemoBtn>
       </Buttons>
       <Content>
-        <img src={image1} />
+        <img src="../images/TeslaImage.png" />
         <img src={video1} />
       </Content>
     </Container>

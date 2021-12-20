@@ -19,8 +19,8 @@ function App() {
       <Projects
         title="Tesla Clone"
         details="dsfadfasdfsafdsa"
-        image1=""
-        video1=""
+        image1="/Users/nazirlouis/Documents/REACT/portfolio/src/images/TeslaImage.png"
+        video1="../images/TeslaVideo.mov"
       />
     </div>
   );
