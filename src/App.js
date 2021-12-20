@@ -16,11 +16,6 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <Landing />
-      <Skills />
-      <Projects />
-      <Projects />
       <Projects />
     </div>
   );

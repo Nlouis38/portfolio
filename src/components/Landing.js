@@ -15,7 +15,8 @@ function Landing() {
         <Hold>
           <Name>Nazir Louis</Name>
         </Hold>
-        <SubHeading>A Mechatronics Engineer turned Web Developer</SubHeading>
+        <SubHeading>A Mechatronics Engineer turned</SubHeading>
+        <SubHeading>Web Developer</SubHeading>
       </MainText>
       <Footer>
         <FooterText>Here Is My Story</FooterText>
@@ -32,8 +33,8 @@ export default Landing;
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  height: 90vh;
-  width: 100vw;
+  align-items: center;
+  justify-content: flex-end;
   color: white;
   font-family: "Press Start 2P", cursive;
   max-width: 100%;
@@ -41,12 +42,12 @@ const Container = styled.div`
 `;
 
 const MainText = styled.div`
+  position: absolute;
+  top: 45%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 50%;
   width: 100vw;
-  height: 100vh;
   justify-content: flex-end;
 `;
 
@@ -68,7 +69,7 @@ const Hello = styled.div`
   width: 0;
   white-space: nowrap;
   animation: ${TypeEffect} 1.5s steps(20, end) forwards;
-  @media (max-width: 705px) {
+  @media (max-width: 400px) {
     font-size: 8px;
   }
 `;
@@ -87,7 +88,7 @@ const Name = styled.div`
   overflow: hidden;
   white-space: nowrap;
   animation: ${TypeEffect} 1.5s 1.5s steps(20, end) backwards;
-  @media (max-width: 705px) {
+  @media (max-width: 400px) {
     font-size: 16px;
   }
 `;
@@ -113,12 +114,12 @@ to{
 const SubHeading = styled.div`
   display: flex;
   flex-wrap: wrap;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 20px;
   opacity: 0;
   filter: blur(20px);
   animation: ${Blur} 1s 3s forwards;
-  @media (max-width: 705px) {
+  @media (max-width: 400px) {
     font-size: 10px;
   }
 `;
@@ -148,11 +149,9 @@ const Bounce = keyframes`
 
 const Footer = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  height: 320px;
   margin-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
   opacity: 0;
   animation: ${Show} 2s 4s forwards, ${Bounce} 1s 4s infinite;
 `;
