@@ -8,17 +8,23 @@ import "./Projects.css";
 function Projects({ title, details, image1, video1 }) {
   return (
     <Container className="projectContainer">
-      <Text className="text">
-        <h1>{title}</h1>
-        <p>{details}</p>
-      </Text>
-      <Buttons>
-        <SourceBtn data-aos="zoom-out">Source Code</SourceBtn>
-        <DemoBtn data-aos="zoom-out">Demo</DemoBtn>
-      </Buttons>
+      <Wrap>
+        <Text className="text">
+          <h1 data-aos="fade-down">{title}</h1>
+          <p data-aos="fade-right">{details}</p>
+        </Text>
+        <Buttons>
+          <SourceBtn data-aos="zoom-out">
+            <a href="https://github.com/Nlouis38/tesla-clone">Source Code</a>
+          </SourceBtn>
+          <DemoBtn data-aos="zoom-out">
+            <a href="https://www.google.com/">Demo</a>
+          </DemoBtn>
+        </Buttons>
+      </Wrap>
       <Content>
-        <img src="../images/TeslaImage.png" />
-        <img src={video1} />
+        <img data-aos="fade-left" src={image1} width="400" />
+        <img data-aos="fade-up" src={video1} width="400" />
       </Content>
     </Container>
   );
@@ -29,18 +35,45 @@ export default Projects;
 const Container = styled.div`
   width: 100vw;
   color: white;
-  max-width: 100%;
-  overflow-x: hidden;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+  margin-top: 100px;
+  @media (max-width: 450px) {
+    margin-bottom: 100px;
+  }
+`;
+
+const Wrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const Text = styled.div`
+  width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  .text {
-    margin: 10px;
+  align-items: center;
+
+  h1 {
+    font-family: "Press Start 2P", cursive;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-family: "Bakbak One", cursive;
+  }
+
+  h1,
+  p {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
   }
 `;
 
@@ -51,24 +84,34 @@ const Buttons = styled.div`
   width: 420px;
   font-family: "Bakbak One", cursive;
   font-size: 22px;
+  margin-top: 20px;
 
-  @media (max-width: 450px) {
+  @media (max-width: 400px) {
     flex-direction: column;
+    width: 350px;
     align-items: center;
   }
 `;
 
 const SourceBtn = styled.div`
   background-color: white;
-  margin: 10px;
-  width: 200px;
+  width: 190px;
   height: 40px;
   border-radius: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 450px) {
-    width: 300px;
+  a {
+    text-decoration: none;
+  }
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+
+  @media (max-width: 400px) {
+    width: 350px;
+    margin-bottom: 10px;
   }
   :hover {
     cursor: pointer;
@@ -80,15 +123,25 @@ const SourceBtn = styled.div`
 
 const DemoBtn = styled.div`
   background-color: white;
-  margin: 10px;
-  width: 180px;
+  width: 190px;
   height: 40px;
   border-radius: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 450px) {
-    width: 300px;
+  margin-left: 20px;
+
+  a {
+    text-decoration: none;
+  }
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+
+  @media (max-width: 400px) {
+    width: 350px;
+    margin-left: 0px;
   }
   :hover {
     cursor: pointer;
@@ -102,8 +155,13 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-bottom: 100px;
-  .image {
+  img {
     margin: 10px;
+    border-radius: 10px;
+  }
+  @media (max-width: 400px) {
+    img {
+      width: 325px;
+    }
   }
 `;
