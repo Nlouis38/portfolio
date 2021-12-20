@@ -34,13 +34,14 @@ export default Projects;
 
 const Container = styled.div`
   width: 100vw;
+  max-width: 100%;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 150px;
   margin-top: 100px;
-  @media (max-width: 450px) {
+  @media (max-width: 770px) {
     margin-bottom: 100px;
   }
 `;
@@ -52,7 +53,6 @@ const Wrap = styled.div`
 `;
 
 const Text = styled.div`
-  width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,7 +86,7 @@ const Buttons = styled.div`
   font-size: 22px;
   margin-top: 20px;
 
-  @media (max-width: 400px) {
+  @media (max-width: 770px) {
     flex-direction: column;
     width: 350px;
     align-items: center;
@@ -109,7 +109,7 @@ const SourceBtn = styled.div`
     color: black;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 770px) {
     width: 350px;
     margin-bottom: 10px;
   }
@@ -139,7 +139,7 @@ const DemoBtn = styled.div`
     color: black;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 770px) {
     width: 350px;
     margin-left: 0px;
   }
@@ -159,7 +159,7 @@ const Content = styled.div`
     margin: 10px;
     border-radius: 10px;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 770px) {
     img {
       width: 325px;
     }
