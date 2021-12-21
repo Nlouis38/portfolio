@@ -14,12 +14,12 @@ function Projects({ title, details, image1, video1 }) {
           <p data-aos="fade-right">{details}</p>
         </Text>
         <Buttons>
-          <SourceBtn data-aos="zoom-out">
-            <a href="https://github.com/Nlouis38/tesla-clone">Source Code</a>
-          </SourceBtn>
-          <DemoBtn data-aos="zoom-out">
-            <a href="https://www.google.com/">Demo</a>
-          </DemoBtn>
+          <a href="https://github.com/Nlouis38/tesla-clone">
+            <SourceBtn data-aos="zoom-out">Source Code</SourceBtn>
+          </a>
+          <a href="https://www.google.com/">
+            <DemoBtn data-aos="zoom-out">Demo</DemoBtn>
+          </a>
         </Buttons>
       </Wrap>
       <Content>
@@ -33,8 +33,8 @@ function Projects({ title, details, image1, video1 }) {
 export default Projects;
 
 const Container = styled.div`
-  width: 100vw;
-  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
   color: white;
   display: flex;
   justify-content: center;
@@ -43,6 +43,7 @@ const Container = styled.div`
   margin-top: 100px;
   @media (max-width: 770px) {
     margin-bottom: 100px;
+    margin-top: 0px;
   }
 `;
 
@@ -57,7 +58,7 @@ const Text = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  max-width: 400px;
   h1 {
     font-family: "Press Start 2P", cursive;
     font-size: 14px;
@@ -103,6 +104,7 @@ const SourceBtn = styled.div`
   align-items: center;
   a {
     text-decoration: none;
+    color: black;
   }
   a:visited {
     text-decoration: none;
@@ -116,7 +118,7 @@ const SourceBtn = styled.div`
   :hover {
     cursor: pointer;
   }
-  :active {
+  a:active {
     transform: scale(0.9, 0.9);
   }
 `;
@@ -133,6 +135,7 @@ const DemoBtn = styled.div`
 
   a {
     text-decoration: none;
+    color: black;
   }
   a:visited {
     text-decoration: none;
@@ -146,7 +149,7 @@ const DemoBtn = styled.div`
   :hover {
     cursor: pointer;
   }
-  :active {
+  a:active {
     transform: scale(0.9, 0.9);
   }
 `;
