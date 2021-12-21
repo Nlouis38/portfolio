@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Landing from "./components/Landing";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import AboutMe from "./components/AboutMe";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import TeslaImage from "./images/TeslaImage.png";
@@ -29,6 +30,7 @@ function App() {
         image1={TeslaImage}
         video1={TeslaVideo}
       />
+      <AboutMe />
     </div>
   );
 }
