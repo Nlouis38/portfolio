@@ -47,7 +47,6 @@ const MainText = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
   justify-content: flex-end;
 `;
 

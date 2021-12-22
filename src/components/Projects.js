@@ -10,7 +10,7 @@ function Projects({ title, details, image1, video1 }) {
     <Container className="projectContainer">
       <Wrap>
         <Text className="text">
-          <h1 data-aos="fade-down">{title}</h1>
+          <Title data-aos="fade-down">{title}</Title>
           <p data-aos="fade-right">{details}</p>
         </Text>
         <Buttons>
@@ -59,23 +59,17 @@ const Text = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 400px;
-  h1 {
-    font-family: "Press Start 2P", cursive;
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
-
   p {
     font-family: "Bakbak One", cursive;
+    color: white;
+    line-height: 2;
   }
+`;
 
-  h1,
-  p {
-    padding: 10px;
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-  }
+const Title = styled.div`
+  font-family: "Press Start 2P", cursive;
+  font-size: 14px;
+  color: white;
 `;
 
 const Buttons = styled.div`

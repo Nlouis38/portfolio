@@ -1,10 +1,6 @@
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 770px) {
   .skillList {
     display: flex;
     flex-direction: column;
   }
-}
-
-body {
-  background-color: #04142d;
 }
