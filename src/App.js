@@ -25,7 +25,7 @@ function App() {
       <Skills />
       <Projects
         title="Tesla Clone"
-        details="This project was used to practice my skills in copying an exact version of a website. 
+        details="This project was used to practice my skills in copying an exact version of a website.
         I was able to do this using React with styled components. Props were used for most of the components
         so I did not have to remake the same component multiple times, this is one of the benefits of React!"
         image1={TeslaImage}
