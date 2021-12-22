@@ -39,6 +39,8 @@ const Container = styled.div`
   align-items: center;
   margin: 10px;
   height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
   @media (max-width: 770px) {
     height: auto;
     margin: 100px 0px;

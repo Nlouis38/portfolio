@@ -72,11 +72,10 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   color: white;
-  max-width: 100vw;
-  overflow-x: hidden;
+  max-width: 100%;
+  overflow: hidden;
   margin: 10px;
   height: 100vh;
-
   @media (max-width: 770px) {
     height: auto;
     margin: 100px 0px;

@@ -127,12 +127,13 @@ const Show = keyframes`
 const Nav = styled.div`
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
   align-items: center;
   opacity: 0;
   width: 100vw;
-  animation: ${Show} 2s 2s forwards;
   max-width: 100%;
+  overflow: hidden;
+  height: 100%;
+  animation: ${Show} 2s forwards;
   img {
     height: 60px;
   }

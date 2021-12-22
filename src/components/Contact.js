@@ -40,8 +40,8 @@ const Container = styled.div`
   height: 100vh;
   color: white;
   margin: 10px;
-  width: 100vw;
   max-width: 100%;
+  overflow: hidden;
   @media (max-width: 770px) {
     height: auto;
     margin: 100px 0px;
@@ -79,6 +79,7 @@ const Socials = styled.div`
 const Link = styled.a`
   text-decoration: none;
   color: black;
+  font-family: "Press Start 2P", cursive;
 
   :visited {
     color: black;

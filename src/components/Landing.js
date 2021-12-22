@@ -39,19 +39,21 @@ const Container = styled.div`
   justify-content: flex-end;
   color: white;
   font-family: "Press Start 2P", cursive;
+  width: 100vw;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   height: 100vh;
   max-height: 100%;
 `;
 
 const MainText = styled.div`
   position: absolute;
-  top: 45%;
+  top: 52%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  text-shadow: 2px 2px black;
 `;
 
 const TypeEffect = keyframes`
