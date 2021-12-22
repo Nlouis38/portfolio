@@ -31,7 +31,7 @@ function App() {
         image1={TeslaImage}
         video1={TeslaVideo}
         sourcecode="https://github.com/Nlouis38/tesla-clone"
-        demo=""
+        demo="https://61c3985f4bd53f988b189ed1--boring-ritchie-aede20.netlify.app/"
       />
       <AboutMe />
       <Contact />
