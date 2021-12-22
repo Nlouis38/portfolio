@@ -1,28 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import NazLogo from "../images/Logo1.png";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 
 function Header() {
+  const [burgerStatus, setBurgerStatus] = useState(false);
+
   function homeScroll() {
     let skills = document.getElementById("homeId");
     skills.scrollIntoView();
+    setBurgerStatus(false);
   }
   function skillsScroll() {
     let skills = document.getElementById("skillsId");
     skills.scrollIntoView();
+    setBurgerStatus(false);
   }
   function projectsScroll() {
     let skills = document.getElementById("projectsId");
     skills.scrollIntoView();
+    setBurgerStatus(false);
   }
   function aboutMeScroll() {
     let skills = document.getElementById("aboutMeId");
     skills.scrollIntoView();
+    setBurgerStatus(false);
   }
   function contactScroll() {
     let skills = document.getElementById("contactId");
     skills.scrollIntoView();
+    setBurgerStatus(false);
   }
   return (
     <Wrap>
@@ -35,9 +43,23 @@ function Header() {
           <div onClick={projectsScroll}>Projects</div>
           <div onClick={aboutMeScroll}>About Me</div>
           <div onClick={contactScroll}>Contact</div>
-          <MenuIcon className="menuIcon" />
+          <MenuIcon
+            onClick={() => setBurgerStatus(true)}
+            className="menuIcon"
+          />
         </RightMenu>
       </Nav>
+      <BurgerNav show={burgerStatus}>
+        <Close>
+          <CloseIcon onClick={() => setBurgerStatus(false)} />
+        </Close>
+        <List>
+          <div onClick={skillsScroll}>Skills</div>
+          <div onClick={projectsScroll}>Projects</div>
+          <div onClick={aboutMeScroll}>About Me</div>
+          <div onClick={contactScroll}>Contact</div>
+        </List>
+      </BurgerNav>
     </Wrap>
   );
 }
@@ -52,8 +74,48 @@ const Wrap = styled.div`
   background-color: black;
   position: sticky;
   top: 0;
-  height: 60px;
   z-index: 10;
+`;
+
+const BurgerNav = styled.div`
+display:flex;
+flex-direction: column;
+position: fixed;
+top: 0;
+bottom: 0;
+right: 0;
+background-color:white;
+color:black;
+font-family: "Bakbak One", cursive;
+font-size: 12px
+z-index: 11;
+width:70%;
+transform: ${(props) => (props.show ? "translateX(0)" : "translateX(100%)")};
+transition: transform 0.2s ease-in;
+`;
+
+const List = styled.div`
+display:flex
+align-items:flex-end;
+flex-direction: column;
+div{
+  font-size:20px;
+  margin:20px 3px;
+  width:100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid;
+}`;
+
+const Close = styled.div`
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+  box-sizing: border-box;
+  svg {
+    margin: 15px;
+    transform: scale(1.5);
+  }
 `;
 
 const Swing = keyframes`

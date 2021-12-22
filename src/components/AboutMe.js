@@ -10,17 +10,17 @@ function AboutMe() {
           About Me
         </Title>
         <Info data-aos="zoom-in" data-aos-duration="2000">
-          Currently I work as Lead Test Engineer for Home Depot, I handle the
-          Automation and Robotic testing of all company products. My most used
-          tools are C++ and Python in order to program mechanical robotic
-          systems as well as computer vision applications. The reason for me
-          making the move from Robotics to Software and Web Development boils
-          down to my passion for programming. In my current role I would say
-          about 15%-30% of my job is programming depending on the day. I would
-          like to be in a position where majority, if not all my day is spent
-          programming and problem solving. I love learning new program languages
-          and I feel like it is a field that I can never get board in because it
-          is always evolving quickly!
+          Currently I work as a Lead Test Engineer for Home Depot, I handle the
+          Automation and Robotic testing of all company products. My weapons of
+          choice are C++ and Python in order to program robotic systems as well
+          as computer vision applications. The reason for me making the move
+          from Robotics to Software and Web Development boils down to my passion
+          for programming. In my current role I would say about 15%-30% of my
+          job is programming depending on the day. I would like to be in a
+          position where majority, if not all my day is spent programming and
+          problem solving. I love learning new programming languages and I feel
+          like it is a field that I can never get bored in because it is always
+          evolving!
         </Info>
       </Text>
       <img src={Avi} data-aos="zoom-out" data-aos-duration="3000" />
