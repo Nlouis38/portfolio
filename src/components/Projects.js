@@ -7,7 +7,7 @@ import "./Projects.css";
 
 function Projects({ title, details, image1, video1, sourcecode, demo }) {
   return (
-    <Container className="projectContainer">
+    <Container id="projectsId" className="projectContainer">
       <Wrap>
         <Text className="text">
           <Title data-aos="fade-down">{title}</Title>

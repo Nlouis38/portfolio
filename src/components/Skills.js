@@ -9,7 +9,7 @@ import "./Skills.css";
 
 function Skills() {
   return (
-    <Container>
+    <Container id="skillsId">
       <Title data-aos="fade-right" className="title">
         SKILLS
       </Title>

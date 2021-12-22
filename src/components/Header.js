@@ -4,6 +4,22 @@ import NazLogo from "../images/Logo1.png";
 import MenuIcon from "@mui/icons-material/Menu";
 
 function Header() {
+  function skillsScroll() {
+    let skills = document.getElementById("skillsId");
+    skills.scrollIntoView();
+  }
+  function projectsScroll() {
+    let skills = document.getElementById("projectsId");
+    skills.scrollIntoView();
+  }
+  function aboutMeScroll() {
+    let skills = document.getElementById("aboutMeId");
+    skills.scrollIntoView();
+  }
+  function contactScroll() {
+    let skills = document.getElementById("contactId");
+    skills.scrollIntoView();
+  }
   return (
     <Wrap>
       <Nav>
@@ -11,11 +27,10 @@ function Header() {
           <img src={NazLogo} />
         </Logo>
         <RightMenu>
-          <div>Skills</div>
-          <div>Projects</div>
-          <div>Resume</div>
-          <div>About Me</div>
-          <div>Contact</div>
+          <div onClick={skillsScroll}>Skills</div>
+          <div onClick={projectsScroll}>Projects</div>
+          <div onClick={aboutMeScroll}>About Me</div>
+          <div onClick={contactScroll}>Contact</div>
           <MenuIcon className="menuIcon" />
         </RightMenu>
       </Nav>

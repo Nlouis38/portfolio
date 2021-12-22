@@ -4,7 +4,7 @@ import Avi from "../images/Rage.png";
 
 function AboutMe() {
   return (
-    <Container>
+    <Container id="aboutMeId">
       <Text>
         <Title data-aos="zoom-in" data-aos-duration="2000">
           About Me

@@ -6,10 +6,10 @@ import styled from "styled-components";
 
 function Contact() {
   return (
-    <Container>
+    <Container id="contactId">
       <Text data-aos="fade-up">Email:Nazirlouis38@gmail.com</Text>
       <Text data-aos="fade-up">Number:1-646-596-6598</Text>
-      <Link href="src\images\Resume.pdf" download>
+      <Link href="./images/Resume.pdf" download>
         <Download data-aos="fade-up">Download Resume</Download>
       </Link>
       <Socials data-aos="fade-up">
