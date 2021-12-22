@@ -33,17 +33,15 @@ function Projects({ title, details, image1, video1, sourcecode, demo }) {
 export default Projects;
 
 const Container = styled.div`
-  overflow-x: hidden;
-  overflow-y: hidden;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 150px;
-  margin-top: 100px;
+  margin: 10px;
+  height: 100vh;
   @media (max-width: 770px) {
-    margin-bottom: 100px;
-    margin-top: 0px;
+    height: auto;
+    margin: 100px 0px;
   }
 `;
 

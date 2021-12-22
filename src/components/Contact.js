@@ -37,9 +37,13 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 400px;
+  height: 100vh;
   color: white;
   margin: 10px;
+  @media (max-width: 770px) {
+    height: auto;
+    margin: 100px 0px;
+  }
 `;
 
 const Text = styled.div`

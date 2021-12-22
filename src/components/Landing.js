@@ -31,6 +31,8 @@ function Landing() {
 export default Landing;
 
 const Container = styled.div`
+  position: abosolute;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,6 +41,8 @@ const Container = styled.div`
   font-family: "Press Start 2P", cursive;
   max-width: 100%;
   overflow-x: hidden;
+  height: 100vh;
+  max-height: 100%;
 `;
 
 const MainText = styled.div`

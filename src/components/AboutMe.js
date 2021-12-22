@@ -34,8 +34,13 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  margin: 10px;
+  overflow-x: hidden;
   @media (max-width: 770px) {
     flex-direction: column;
+    height: auto;
+    margin: 100px 0px;
   }
   color: white;
   img {

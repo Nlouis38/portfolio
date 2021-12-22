@@ -48,9 +48,12 @@ const Wrap = styled.div`
   position: absolute;
   width: 100vw;
   max-width: 100%;
+  overflow-x: hidden;
+  background-color: black;
   position: sticky;
   top: 0;
-  height: 0px;
+  height: 60px;
+  z-index: 10;
 `;
 
 const Swing = keyframes`
@@ -131,7 +134,7 @@ const Nav = styled.div`
   animation: ${Show} 2s 4.5s forwards;
   max-width: 100%;
   img {
-    height: 70px;
+    height: 60px;
   }
 
   img:hover {

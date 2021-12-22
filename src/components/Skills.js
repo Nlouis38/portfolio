@@ -71,10 +71,16 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
   color: white;
-  max-width: 100%;
+  max-width: 100vw;
   overflow-x: hidden;
+  margin: 10px;
+  height: 100vh;
+
+  @media (max-width: 770px) {
+    height: auto;
+    margin: 100px 0px;
+  } ;
 `;
 
 const Title = styled.div`
@@ -87,8 +93,6 @@ const SkillsList = styled.ul`
   display: flex;
   list-style: none;
   align-items: center;
-
-  margin-bottom: 100px;
   li {
     list-style: none;
     font-family: "Bakbak One", cursive;
