@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Projects.css";
 
-function Projects({ title, details, image1, video1 }) {
+function Projects({ title, details, image1, video1, sourcecode, demo }) {
   return (
     <Container className="projectContainer">
       <Wrap>
@@ -14,10 +14,10 @@ function Projects({ title, details, image1, video1 }) {
           <p data-aos="fade-right">{details}</p>
         </Text>
         <Buttons>
-          <a href="https://github.com/Nlouis38/tesla-clone">
+          <a href={sourcecode} target="_blank">
             <SourceBtn data-aos="zoom-out">Source Code</SourceBtn>
           </a>
-          <a href="https://www.google.com/">
+          <a href={demo}>
             <DemoBtn data-aos="zoom-out">Demo</DemoBtn>
           </a>
         </Buttons>
@@ -81,6 +81,19 @@ const Buttons = styled.div`
   font-size: 22px;
   margin-top: 20px;
 
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:active {
+    transform: scale(0.9, 0.9);
+  }
+
   @media (max-width: 770px) {
     flex-direction: column;
     width: 350px;
@@ -96,14 +109,6 @@ const SourceBtn = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  a:visited {
-    text-decoration: none;
-    color: black;
-  }
 
   @media (max-width: 770px) {
     width: 350px;
@@ -111,9 +116,6 @@ const SourceBtn = styled.div`
   }
   :hover {
     cursor: pointer;
-  }
-  a:active {
-    transform: scale(0.9, 0.9);
   }
 `;
 

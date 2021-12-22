@@ -7,19 +7,22 @@ import styled from "styled-components";
 function Contact() {
   return (
     <Container>
-      <Text>Email: Nazirlouis38@gmail.com</Text>
-      <Text>Number: 1-646-596-6598</Text>
-      <Link href="">
-        <Download>Download Resume</Download>
+      <Text data-aos="fade-up">Email:Nazirlouis38@gmail.com</Text>
+      <Text data-aos="fade-up">Number:1-646-596-6598</Text>
+      <Link href="src\images\Resume.pdf" download>
+        <Download data-aos="fade-up">Download Resume</Download>
       </Link>
-      <Socials>
-        <a href="https://www.linkedin.com/in/nazir-louis-b19130190/">
+      <Socials data-aos="fade-up">
+        <a
+          href="https://www.linkedin.com/in/nazir-louis-b19130190/"
+          target="_blank"
+        >
           <LinkedInIcon className="icon" />
         </a>
-        <a href="https://twitter.com/robowebdev">
+        <a href="https://twitter.com/robowebdev" target="_blank">
           <TwitterIcon className="icon" />
         </a>
-        <a href="https://github.com/Nlouis38">
+        <a href="https://github.com/Nlouis38" target="_blank">
           <GitHubIcon className="icon" />
         </a>
       </Socials>
@@ -42,6 +45,9 @@ const Container = styled.div`
 const Text = styled.div`
   font-family: "Press Start 2P", cursive;
   margin: 10px;
+  @media (max-width: 400px) {
+    font-size: 12px;
+  }
 `;
 
 const Socials = styled.div`

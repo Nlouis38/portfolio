@@ -30,6 +30,8 @@ function App() {
         so I did not have to remake the same component multiple times, this is one of the benefits of React!"
         image1={TeslaImage}
         video1={TeslaVideo}
+        sourcecode="https://github.com/Nlouis38/tesla-clone"
+        demo=""
       />
       <AboutMe />
       <Contact />
