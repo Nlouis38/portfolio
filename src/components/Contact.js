@@ -3,14 +3,18 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import styled from "styled-components";
+import Resume from "../images/Resume.pdf";
 
 function Contact() {
   return (
     <Container id="contactId">
       <Text data-aos="fade-up">Email:Nazirlouis38@gmail.com</Text>
       <Text data-aos="fade-up">Number:1-646-596-6598</Text>
-      <Link href="./images/Resume.pdf" download>
+      <Link href={Resume} download>
         <Download data-aos="fade-up">Download Resume</Download>
+      </Link>
+      <Link href={Resume} target="_blank">
+        <Download data-aos="fade-up">View Resume</Download>
       </Link>
       <Socials data-aos="fade-up">
         <a
@@ -61,6 +65,10 @@ const Socials = styled.div`
   .icon {
     transform: scale(1.8);
     margin: 20px;
+    @media (max-width: 770px) {
+      height: auto;
+      margin-bottom: 100px;
+    }
   }
   a {
     text-decoration: none;
