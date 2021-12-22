@@ -131,7 +131,7 @@ const Nav = styled.div`
   align-items: center;
   opacity: 0;
   width: 100vw;
-  animation: ${Show} 2s 4.5s forwards;
+  animation: ${Show} 2s 2s forwards;
   max-width: 100%;
   img {
     height: 60px;

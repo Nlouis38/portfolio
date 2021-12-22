@@ -40,6 +40,8 @@ const Container = styled.div`
   height: 100vh;
   color: white;
   margin: 10px;
+  width: 100vw;
+  max-width: 100%;
   @media (max-width: 770px) {
     height: auto;
     margin: 100px 0px;
@@ -49,8 +51,9 @@ const Container = styled.div`
 const Text = styled.div`
   font-family: "Press Start 2P", cursive;
   margin: 10px;
-  @media (max-width: 400px) {
-    font-size: 12px;
+  font-size: 16px;
+  @media (max-width: 550px) {
+    font-size: 10px;
   }
 `;
 
@@ -76,7 +79,6 @@ const Socials = styled.div`
 const Link = styled.a`
   text-decoration: none;
   color: black;
-  font-family: "Press Start 2P", cursive;
 
   :visited {
     color: black;
