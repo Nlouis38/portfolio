@@ -4,6 +4,10 @@ import NazLogo from "../images/Logo1.png";
 import MenuIcon from "@mui/icons-material/Menu";
 
 function Header() {
+  function homeScroll() {
+    let skills = document.getElementById("homeId");
+    skills.scrollIntoView();
+  }
   function skillsScroll() {
     let skills = document.getElementById("skillsId");
     skills.scrollIntoView();
@@ -23,7 +27,7 @@ function Header() {
   return (
     <Wrap>
       <Nav>
-        <Logo>
+        <Logo onClick={homeScroll}>
           <img src={NazLogo} />
         </Logo>
         <RightMenu>
@@ -44,6 +48,9 @@ const Wrap = styled.div`
   position: absolute;
   width: 100vw;
   max-width: 100%;
+  position: sticky;
+  top: 0;
+  height: 0px;
 `;
 
 const Swing = keyframes`
@@ -119,10 +126,7 @@ const Nav = styled.div`
   justify-content: space-between;
   overflow: hidden;
   align-items: center;
-  height: 10vh;
   opacity: 0;
-  position: sticky;
-  top: 0;
   width: 100vw;
   animation: ${Show} 2s 4.5s forwards;
   max-width: 100%;
@@ -143,7 +147,7 @@ from{
   color:white;
 }
 to{
-  color:#05142c;
+  color:gray;
 }`;
 
 const RightMenu = styled.div`
@@ -152,6 +156,7 @@ const RightMenu = styled.div`
   font-family: "Press Start 2P", cursive;
   font-size: 12px;
   margin-right: 20px;
+  z-index: 9;
 
   div {
     padding: 10px;

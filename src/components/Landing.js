@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 
 function Landing() {
   return (
-    <Container className="container">
+    <Container id="homeId" className="container">
       <MainText>
         <Hold>
           <Hello>Hello, my name is</Hello>
