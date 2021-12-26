@@ -17,7 +17,7 @@ function Projects({ title, details, image1, video1, sourcecode, demo }) {
           <a href={sourcecode} target="_blank">
             <SourceBtn data-aos="zoom-out">Source Code</SourceBtn>
           </a>
-          <a href={demo}>
+          <a href={demo} target="_blank">
             <DemoBtn data-aos="zoom-out">Demo</DemoBtn>
           </a>
         </Buttons>

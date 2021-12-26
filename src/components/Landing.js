@@ -159,6 +159,10 @@ const Footer = styled.div`
   align-items: center;
   opacity: 0;
   animation: ${Show} 2s 4s forwards, ${Bounce} 1s 4s infinite;
+  @media (max-width: 770px) {
+    height: auto;
+    margin-bottom: 70px;
+  } ;
 `;
 
 const FooterText = styled.div`

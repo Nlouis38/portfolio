@@ -3,7 +3,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import styled from "styled-components";
-import Resume from "../images/Resume.pdf";
+import Resume from "../images/NazirLouisResume.pdf";
 
 function Contact() {
   return (

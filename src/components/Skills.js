@@ -14,11 +14,7 @@ function Skills() {
         SKILLS
       </Title>
       <SkillsList className="skillList">
-        <FrontEnd
-          className="frontEnd"
-          data-aos="fade-right"
-          data-aos-delay="750"
-        >
+        <FrontEnd className="frontEnd" data-aos="fade-right">
           <div>
             Front-End
             <WebIcon />
@@ -36,7 +32,7 @@ function Skills() {
           </ul>
         </FrontEnd>
         <Hold>
-          <BackEnd data-aos="fade-right" data-aos-delay="250">
+          <BackEnd data-aos="fade-right">
             <div>
               Back-End
               <StorageIcon />
@@ -47,7 +43,7 @@ function Skills() {
               <li>C++</li>
             </ul>
           </BackEnd>
-          <General data-aos="fade-right" data-aos-delay="500">
+          <General data-aos="fade-right">
             <div>
               General
               <PsychologyIcon />
@@ -78,7 +74,6 @@ const Container = styled.div`
   height: 100vh;
   @media (max-width: 770px) {
     height: auto;
-    margin: 100px 0px;
   } ;
 `;
 
