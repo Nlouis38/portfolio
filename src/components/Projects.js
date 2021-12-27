@@ -18,7 +18,13 @@ function Projects({ title, details, image1, video1, sourcecode, demo }) {
             <SourceBtn data-aos="zoom-out">Source Code</SourceBtn>
           </a>
           <a href={demo} target="_blank">
-            <DemoBtn data-aos="zoom-out">Demo</DemoBtn>
+            <DemoBtn
+              href="https://boring-ritchie-aede20.netlify.app/"
+              target="_blank"
+              data-aos="zoom-out"
+            >
+              Demo
+            </DemoBtn>
           </a>
         </Buttons>
       </Wrap>
