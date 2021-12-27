@@ -15,8 +15,7 @@ function Landing() {
         <Hold>
           <Name>Nazir Louis</Name>
         </Hold>
-        <SubHeading>A Mechatronics Engineer turned</SubHeading>
-        <SubHeading>Web Developer</SubHeading>
+        <SubHeading>A Full Stack Developer</SubHeading>
       </MainText>
       <Footer>
         <FooterText>Here Is My Story</FooterText>
