@@ -94,16 +94,38 @@ transform: ${(props) => (props.show ? "translateX(0)" : "translateX(100%)")};
 transition: transform 0.2s ease-in;
 `;
 
+const Color = keyframes`
+from{
+  color:white;
+}
+to{
+  color:gray;
+}`;
+
+const Color2 = keyframes`
+from{ 
+  background-color:white;
+}
+to{ 
+  background-color:LightGray;
+}`;
+
 const List = styled.div`
 display:flex
 align-items:flex-end;
 flex-direction: column;
 div{
   font-size:20px;
-  margin:20px 3px;
+  padding:20px 3px;
   width:100%;
   box-sizing: border-box;
   border-bottom: 1px solid;
+
+}
+
+div:hover{
+  cursor:pointer;
+  animation: ${Color2} 1s ease;
 }`;
 
 const Close = styled.div`
@@ -207,14 +229,6 @@ const Nav = styled.div`
 `;
 
 const Logo = styled.div``;
-
-const Color = keyframes`
-from{
-  color:white;
-}
-to{
-  color:gray;
-}`;
 
 const RightMenu = styled.div`
   color: white;
