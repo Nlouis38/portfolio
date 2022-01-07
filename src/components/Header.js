@@ -80,6 +80,7 @@ const Wrap = styled.div`
 const BurgerNav = styled.div`
 display:flex;
 flex-direction: column;
+border: black solid 1px;
 position: fixed;
 top: 0;
 bottom: 0;
