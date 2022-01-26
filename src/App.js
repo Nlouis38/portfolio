@@ -10,6 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import TeslaImage from "./images/TeslaImage.png";
 import TeslaVideo from "./images/TeslaVideo.gif";
+import ProjectList from "./components/ProjectList";
 
 function App() {
   useEffect(() => {
@@ -20,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      {/* <Header />
       <Landing />
       <Skills />
       <Projects
@@ -35,7 +36,8 @@ function App() {
       />
       
       <AboutMe />
-      <Contact />
+      <Contact /> */}
+      <ProjectList />
     </div>
   );
 }
