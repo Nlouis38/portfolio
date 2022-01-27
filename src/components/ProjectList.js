@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import data from "./data";
+import styled from "styled-components";
 
 function ProjectList() {
   const [project, setProjects] = useState(data);
   return (
-    <div>
+    <Container>
       {data.map((project) => {
         const { id, title, demo, source, img, category } = project;
         console.log(title);
@@ -19,8 +20,14 @@ function ProjectList() {
           </div>
         );
       })}
-    </div>
+    </Container>
   );
 }
 
 export default ProjectList;
+
+const Container = styled.div`
+  color: white;
+`;
+
+const BtnContainer = styled.div``;
