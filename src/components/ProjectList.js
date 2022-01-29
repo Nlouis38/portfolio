@@ -40,23 +40,25 @@ function ProjectList() {
           );
         })}
       </BtnContainer>
-      {projects.map((project) => {
-        const { id, title, demo, source, img, category } = project;
-        return (
-          <div className="projects" key={id}>
-            <h1>{title}</h1>
-            <img src={img} alt={title} />
-            <div className="btn-container">
-              <a href={demo}>
-                <button className="demo">Demo</button>
-              </a>
-              <a href={source}>
-                <button className="source">Source</button>
-              </a>
+      <Projects>
+        {projects.map((project) => {
+          const { id, title, demo, source, img, category } = project;
+          return (
+            <div className="projects" key={id}>
+              <h1>{title}</h1>
+              <img src={img} alt={title} />
+              <div className="btn-container">
+                <a href={demo}>
+                  <button className="demo">Demo</button>
+                </a>
+                <a href={source}>
+                  <button className="source">Source</button>
+                </a>
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </Projects>
     </Container>
   );
 }
@@ -65,6 +67,25 @@ export default ProjectList;
 
 const Container = styled.div`
   color: white;
+  font-family: "Bakbak One", cursive;
+  font-size: 14px;
 `;
 
-const BtnContainer = styled.div``;
+const Projects = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .projects {
+    margin: 20px 0px;
+  }
+`;
+
+const BtnContainer = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  button {
+    font-size: 14px;
+    padding: 5px 20px;
+    font-family: "Press Start 2P", cursive;
+  }
+`;
