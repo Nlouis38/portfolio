@@ -126,7 +126,7 @@ div{
 
 div:hover{
   cursor:pointer;
-  animation: ${Color2} 1s ease;
+  animation: ${Color2} 1s forwards;
 }`;
 
 const Close = styled.div`
