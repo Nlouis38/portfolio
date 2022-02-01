@@ -73,8 +73,9 @@ const Container = styled.div`
 
 const Projects = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
+  align-items: center;
   .projects {
     margin: 20px 0px;
   }
