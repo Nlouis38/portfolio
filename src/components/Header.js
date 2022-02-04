@@ -14,22 +14,38 @@ function Header() {
   }
   function skillsScroll() {
     let skills = document.getElementById("skillsId");
-    skills.scrollIntoView();
+    skills.scrollIntoView({
+      behavior: "auto",
+      block: "center",
+      inline: "center",
+    });
     setBurgerStatus(false);
   }
   function projectsScroll() {
     let skills = document.getElementById("projectsId");
-    skills.scrollIntoView();
+    skills.scrollIntoView({
+      behavior: "auto",
+      block: "center",
+      inline: "center",
+    });
     setBurgerStatus(false);
   }
   function aboutMeScroll() {
     let skills = document.getElementById("aboutMeId");
-    skills.scrollIntoView();
+    skills.scrollIntoView({
+      behavior: "auto",
+      block: "center",
+      inline: "center",
+    });
     setBurgerStatus(false);
   }
   function contactScroll() {
     let skills = document.getElementById("contactId");
-    skills.scrollIntoView();
+    skills.scrollIntoView({
+      behavior: "auto",
+      block: "center",
+      inline: "center",
+    });
     setBurgerStatus(false);
   }
   return (
