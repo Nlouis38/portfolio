@@ -16,45 +16,46 @@ function Skills() {
       <SkillsList className="skillList">
         <FrontEnd className="frontEnd" data-aos="fade-right">
           <div>
-            Front-End
+            Languages
             <WebIcon />
           </div>
           <ul>
-            <li>React.js</li>
-            <li>Redux</li>
-            <li>Styled Components</li>
-            <li>Material UI</li>
+            <li>Python</li>
+            <li>C++</li>
             <li>Javascript</li>
-            <li>Flex Box</li>
-            <li>CSS Grid</li>
-            <li>CSS</li>
-            <li>HTML</li>
+            <li>HTML/CSS</li>
+            <li>MATLAB</li>
           </ul>
         </FrontEnd>
-        <Hold>
-          <BackEnd data-aos="fade-right">
-            <div>
-              Back-End
-              <StorageIcon />
-            </div>
-            <ul>
-              <li>Node.js</li>
-              <li>Python</li>
-              <li>C++</li>
-            </ul>
-          </BackEnd>
-          <General data-aos="fade-right">
-            <div>
-              General
-              <PsychologyIcon />
-            </div>
-            <ul>
-              <li>Git Version Control</li>
-              <li>Machine Learning</li>
-              <li>Computer Vision</li>
-            </ul>
-          </General>
-        </Hold>
+
+        <BackEnd data-aos="fade-right">
+          <div>
+            Libaries
+            <StorageIcon />
+          </div>
+          <ul>
+            <li>OpenCV</li>
+            <li>Numpy</li>
+            <li>Tensor Flow</li>
+            <li>React</li>
+            <li>Numpy</li>
+          </ul>
+        </BackEnd>
+        <General data-aos="fade-right">
+          <div>
+            General
+            <PsychologyIcon />
+          </div>
+          <ul>
+            <li>Git Version Control</li>
+            <li>Problem Solving</li>
+            <li>VS Code</li>
+            <li>PyCharm</li>
+            <li>Web Hosting</li>
+            <li>Machine Leearning</li>
+            <li>Computer Vision</li>
+          </ul>
+        </General>
       </SkillsList>
     </Container>
   );
@@ -121,11 +122,6 @@ const FrontEnd = styled.ul`
   }
 `;
 
-const Hold = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
 const BackEnd = styled.ul`
   display: flex;
   flex-direction: column;
@@ -133,9 +129,9 @@ const BackEnd = styled.ul`
   background-color: white;
   color: black;
   width: 300px;
-  height: 200px;
+  height: 450px;
   border-radius: 10px;
-  margin: 25px 0px;
+  margin: 20px 20px;
   div {
     display: flex;
     align-items: center;
@@ -160,9 +156,9 @@ const General = styled.ul`
   background-color: white;
   color: black;
   width: 300px;
-  height: 200px;
+  height: 450px;
   border-radius: 10px;
-  margin: 25px 0px;
+  margin: 20px 20px;
   div {
     display: flex;
     align-items: center;
