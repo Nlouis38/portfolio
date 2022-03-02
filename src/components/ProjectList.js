@@ -11,7 +11,6 @@ const allCategories = [
   ),
 ];
 
-console.log(allCategories);
 function ProjectList() {
   const [projects, setProjects] = useState(data);
   const [categories, setCategories] = useState(allCategories);
@@ -66,6 +65,10 @@ function ProjectList() {
 export default ProjectList;
 
 const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
   font-family: "Bakbak One", cursive;
   font-size: 14px;
@@ -73,7 +76,7 @@ const Container = styled.div`
 
 const Projects = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 200px [col-start]);
+  grid-template-columns: repeat(4, 300px [col-start]);
   .projects {
     margin: 20px;
   }
@@ -83,6 +86,8 @@ const BtnContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   button {
+    margin: 0px 5px;
+    border-radius: 20px;
     font-size: 14px;
     padding: 5px 20px;
     font-family: "Press Start 2P", cursive;

@@ -1,11 +1,13 @@
+import TeslaImage from "../images/TeslaVideo.gif";
+
 const projects = [
   {
     id: 1,
     title: "Tesla Clone",
     demo: "https://61c3985f4bd53f988b189ed1--boring-ritchie-aede20.netlify.app/",
     source: "https://github.com/Nlouis38/tesla-clone",
-    img: "../images/TeslaImage.png",
-    category: "React",
+    img: TeslaImage,
+    category: "Web Development",
   },
   {
     id: 2,
@@ -21,7 +23,7 @@ const projects = [
     demo: "",
     source: "https://github.com/Nlouis38/chrom-extension",
     img: "",
-    category: "Javascript",
+    category: "Web Development",
   },
   {
     id: 4,
@@ -29,7 +31,7 @@ const projects = [
     demo: "",
     source: "https://github.com/Nlouis38/color-flipper",
     img: "",
-    category: "Javascript",
+    category: "Web Development",
   },
   {
     id: 5,
@@ -37,15 +39,63 @@ const projects = [
     demo: "",
     source: "https://github.com/Nlouis38/01-birthday-reminder",
     img: "",
-    category: "React",
+    category: "Web Development",
   },
   {
     id: 6,
-    title: "Birthday Reminder",
+    title: "Air Reel Cycle Testing",
     demo: "",
     source: "https://github.com/Nlouis38/01-birthday-reminder",
     img: "",
-    category: "React",
+    category: "Simple Arduino Fixtures",
+  },
+  {
+    id: 7,
+    title: "Smart Door Locks",
+    demo: "",
+    source: "https://github.com/Nlouis38/01-birthday-reminder",
+    img: "",
+    category: "Advanced Arduino Fixtures",
+  },
+  {
+    id: 8,
+    title: "Smart Faucets Cycle Testing",
+    demo: "",
+    source: "https://github.com/Nlouis38/01-birthday-reminder",
+    img: "",
+    category: "Simple Arduino Fixtures",
+  },
+  {
+    id: 9,
+    title: "Flashlight Cycling",
+    demo: "",
+    source: "https://github.com/Nlouis38/01-birthday-reminder",
+    img: "",
+    category: "Web Development",
+  },
+  {
+    id: 10,
+    title: "Staple Gun Cycling",
+    demo: "",
+    source: "https://github.com/Nlouis38/01-birthday-reminder",
+    img: "",
+    category: "Python/C++",
+  },
+  {
+    id: 11,
+    title: "Digital Waterfall",
+    demo: "",
+    source: "https://github.com/Nlouis38/01-birthday-reminder",
+    img: "",
+    category: "Python/C++",
+  },
+  {
+    id: 12,
+    title: "Object Detection and Measurement",
+    demo: "",
+    source: "https://github.com/Nlouis38/01-birthday-reminder",
+    img: "",
+    category: "OpenCV",
   },
 ];
 export default projects;
