@@ -25,6 +25,7 @@ function Skills() {
             <li>Javascript</li>
             <li>HTML/CSS</li>
             <li>MATLAB</li>
+            <li>Arduino</li>
           </ul>
         </FrontEnd>
 
@@ -38,7 +39,8 @@ function Skills() {
             <li>Numpy</li>
             <li>Tensor Flow</li>
             <li>React</li>
-            <li>Numpy</li>
+            <li></li>
+            <li></li>
           </ul>
         </BackEnd>
         <General data-aos="fade-right">
@@ -48,12 +50,13 @@ function Skills() {
           </div>
           <ul>
             <li>Git Version Control</li>
-            <li>Problem Solving</li>
-            <li>VS Code</li>
-            <li>PyCharm</li>
-            <li>Web Hosting</li>
             <li>Machine Leearning</li>
             <li>Computer Vision</li>
+            <li>Automation</li>
+            <li>Robotics and Mechatronics</li>
+            <li>Raspberry Pi</li>
+            <li>PLC's</li>
+            <li>Web Development</li>
           </ul>
         </General>
       </SkillsList>
