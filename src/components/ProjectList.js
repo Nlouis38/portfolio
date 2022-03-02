@@ -45,7 +45,7 @@ function ProjectList() {
           return (
             <div className="projects" key={id}>
               <h1>{title}</h1>
-              <img src={img} alt={title} />
+              <img className="image" src={img} alt={title} />
               <div className="btn-container">
                 <a href={demo}>
                   <button className="demo">Demo</button>
@@ -78,7 +78,15 @@ const Projects = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 300px [col-start]);
   .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 20px;
+    .image {
+      width: 250px;
+      height: 150px;
+    }
   }
 `;
 
