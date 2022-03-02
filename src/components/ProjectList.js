@@ -87,6 +87,19 @@ const Projects = styled.div`
       width: 250px;
       height: 150px;
     }
+    .demo,
+    .source {
+      font-family: "Press Start 2P", cursive;
+      padding: 10px;
+      margin: 5px;
+      max-width: 100px;
+    }
+    .demo:hover,
+    .source:hover {
+      cursor: pointer;
+      background-color: gray;
+      color: white;
+    }
   }
 `;
 
