@@ -10,17 +10,17 @@ function AboutMe() {
           About Me
         </Title>
         <Info data-aos="zoom-in" data-aos-duration="2000">
-          Currently I work as a Lead Test Engineer for Home Depot, I handle the
-          Automation and Robotic testing of all company products. My weapons of
-          choice are C++ and Python in order to program robotic systems as well
-          as computer vision applications. The reason for me making the move
-          from Robotics to Software and Web Development boils down to my passion
-          for programming. In my current role I would say about 15%-30% of my
-          job is programming depending on the day. I would like to be in a
-          position where majority, if not all my day is spent programming and
-          problem solving. I love learning new programming languages and I feel
-          like it is a field that I can never get bored in because it is always
-          evolving!
+          Hello everyone, my name is Nazir Louis I have formal education in
+          Mechanical Engineering achieving a Bachelors degree from Georgia
+          Southern University. My passion has always been mechatronics and
+          automation, combining my knowledge of mechanical engineering,
+          electrical engineering, and programming to create automated systems
+          that make our lives easier. Currently, I work as a Test Engineer at
+          Home Depot where I manage and delegate the testing of Home Depot
+          Products. This also consists of building automated fixtures in order
+          to test the life cycle of a product as well as speed up and streamline
+          our testing process! Technologies that I use frequently consist of but
+          are not limited to Python, C++, Raspberry Pi, Arduino, and PLCs.
         </Info>
       </Text>
       <img src={Avi} data-aos="zoom-out" data-aos-duration="3000" />
