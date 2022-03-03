@@ -13,7 +13,6 @@ const allCategories = [
 
 function ProjectList() {
   const [projects, setProjects] = useState(data);
-  const [categories, setCategories] = useState(allCategories);
 
   const filterProjects = (category) => {
     console.log(category);

@@ -25,6 +25,7 @@ function App() {
       <Landing />
       <Skills />
       <ProjectList />
+      <AboutMe />
       <Contact />
     </div>
   );

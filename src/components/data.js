@@ -1,4 +1,5 @@
 import TeslaImage from "../images/TeslaVideo.gif";
+import PortfolioImage from "../images/Pixel1.jpg";
 
 const projects = [
   {
@@ -14,43 +15,12 @@ const projects = [
     title: "Blackjack",
     demo: "",
     source: "https://github.com/Nlouis38/BlackJack",
-    img: "",
+    img: "https://en.wikipedia.org/wiki/File:Blackjack21.jpg",
     category: "Games",
   },
+
   {
     id: 3,
-    title: "Chrome Extension",
-    demo: "",
-    source: "https://github.com/Nlouis38/chrom-extension",
-    img: "",
-    category: "Web Development",
-  },
-  {
-    id: 4,
-    title: "Color Flipper",
-    demo: "",
-    source: "https://github.com/Nlouis38/color-flipper",
-    img: "",
-    category: "Web Development",
-  },
-  {
-    id: 5,
-    title: "Tour List",
-    demo: "",
-    source: "https://github.com/Nlouis38/01-birthday-reminder",
-    img: "",
-    category: "Web Development",
-  },
-  {
-    id: 6,
-    title: "Air Reel Cycle Testing",
-    demo: "",
-    source: "https://github.com/Nlouis38/01-birthday-reminder",
-    img: "",
-    category: "Arduino Automation",
-  },
-  {
-    id: 7,
     title: "Smart Door Locks",
     demo: "",
     source: "https://github.com/Nlouis38/01-birthday-reminder",
@@ -58,23 +28,7 @@ const projects = [
     category: "Arduino Automation",
   },
   {
-    id: 8,
-    title: "Smart Faucets Cycle Testing",
-    demo: "",
-    source: "https://github.com/Nlouis38/01-birthday-reminder",
-    img: "",
-    category: "Arduino Automation",
-  },
-  {
-    id: 9,
-    title: "Flashlight Cycling",
-    demo: "",
-    source: "https://github.com/Nlouis38/01-birthday-reminder",
-    img: "",
-    category: "Arduino Automation",
-  },
-  {
-    id: 10,
+    id: 4,
     title: "Staple Gun Cycling",
     demo: "",
     source: "https://github.com/Nlouis38/01-birthday-reminder",
@@ -82,7 +36,7 @@ const projects = [
     category: "High-Level Automation",
   },
   {
-    id: 11,
+    id: 5,
     title: "Digital Waterfall",
     demo: "",
     source: "https://github.com/Nlouis38/01-birthday-reminder",
@@ -90,12 +44,20 @@ const projects = [
     category: "High-Level Automation",
   },
   {
-    id: 12,
+    id: 6,
     title: "Object Detection and Measurement",
     demo: "",
     source: "https://github.com/Nlouis38/01-birthday-reminder",
     img: "",
     category: "Machine Learning/AI",
+  },
+  {
+    id: 7,
+    title: "My Portfolio",
+    demo: "nazirlouis.com",
+    source: "https://github.com/Nlouis38/portfolio.git",
+    img: PortfolioImage,
+    category: "Web Development",
   },
 ];
 export default projects;

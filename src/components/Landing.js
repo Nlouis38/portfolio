@@ -15,7 +15,11 @@ function Landing() {
         <Hold>
           <Name>Nazir Louis</Name>
         </Hold>
-        <SubHeading>Software Engineer</SubHeading>
+        <SubHeading>
+          <div>Data Science</div>
+          <div>Web Development</div>
+          <div>Embedded Systems</div>
+        </SubHeading>
       </MainText>
       <Footer>
         <FooterText>Here Is My Story</FooterText>
@@ -118,11 +122,16 @@ to{
 const SubHeading = styled.div`
   display: flex;
   flex-wrap: wrap;
-  font-size: 14px;
+  flex-direction: column;
+  font-size: 12px;
   margin-bottom: 20px;
   opacity: 0;
   filter: blur(20px);
   animation: ${Blur} 1s 3s forwards;
+  align-items: center;
+  div {
+    margin: 5px;
+  }
   @media (max-width: 450px) {
     font-size: 10px;
   }
