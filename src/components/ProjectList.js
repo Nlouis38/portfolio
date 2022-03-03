@@ -47,10 +47,10 @@ function ProjectList() {
               <h1>{title}</h1>
               <img className="image" src={img} alt={title} />
               <div className="btn-container">
-                <a href={demo}>
+                <a href={demo} target="_blank">
                   <button className="demo">Demo</button>
                 </a>
-                <a href={source}>
+                <a href={source} target="_blank">
                   <button className="source">Source</button>
                 </a>
               </div>
@@ -107,7 +107,7 @@ const BtnContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   button {
-    margin: 0px 5px;
+    margin: 0px 2.5px;
     border-radius: 20px;
     font-size: 14px;
     padding: 5px 20px;

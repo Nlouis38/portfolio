@@ -47,7 +47,7 @@ const projects = [
     demo: "",
     source: "https://github.com/Nlouis38/01-birthday-reminder",
     img: "",
-    category: "Simple Arduino Fixtures",
+    category: "Arduino Automation",
   },
   {
     id: 7,
@@ -55,7 +55,7 @@ const projects = [
     demo: "",
     source: "https://github.com/Nlouis38/01-birthday-reminder",
     img: "",
-    category: "Advanced Arduino Fixtures",
+    category: "Arduino Automation",
   },
   {
     id: 8,
@@ -63,7 +63,7 @@ const projects = [
     demo: "",
     source: "https://github.com/Nlouis38/01-birthday-reminder",
     img: "",
-    category: "Simple Arduino Fixtures",
+    category: "Arduino Automation",
   },
   {
     id: 9,
@@ -71,7 +71,7 @@ const projects = [
     demo: "",
     source: "https://github.com/Nlouis38/01-birthday-reminder",
     img: "",
-    category: "Web Development",
+    category: "Arduino Automation",
   },
   {
     id: 10,
@@ -79,7 +79,7 @@ const projects = [
     demo: "",
     source: "https://github.com/Nlouis38/01-birthday-reminder",
     img: "",
-    category: "Python/C++",
+    category: "High-Level Automation",
   },
   {
     id: 11,
@@ -87,7 +87,7 @@ const projects = [
     demo: "",
     source: "https://github.com/Nlouis38/01-birthday-reminder",
     img: "",
-    category: "Python/C++",
+    category: "High-Level Automation",
   },
   {
     id: 12,
@@ -95,7 +95,7 @@ const projects = [
     demo: "",
     source: "https://github.com/Nlouis38/01-birthday-reminder",
     img: "",
-    category: "OpenCV",
+    category: "Machine Learning/AI",
   },
 ];
 export default projects;
