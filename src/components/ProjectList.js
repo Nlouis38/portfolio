@@ -11,10 +11,8 @@ const allCategories = [
   ),
 ];
 
-console.log(allCategories);
 function ProjectList() {
   const [projects, setProjects] = useState(data);
-  const [categories, setCategories] = useState(allCategories);
 
   const filterProjects = (category) => {
     console.log(category);
@@ -31,7 +29,10 @@ function ProjectList() {
 
   return (
     <Container id="projectsId">
-      <BtnContainer>
+      <Title data-aos="fade-right" className="title">
+        PROJECTS
+      </Title>
+      <BtnContainer data-aos="zoom-in" data-aos-duration="2000">
         {allCategories.map((category, index) => {
           return (
             <button key={index} onClick={() => filterProjects(category)}>
@@ -40,18 +41,18 @@ function ProjectList() {
           );
         })}
       </BtnContainer>
-      <Projects>
+      <Projects data-aos="zoom-out" data-aos-duration="2000">
         {projects.map((project) => {
           const { id, title, demo, source, img, category } = project;
           return (
             <div className="projects" key={id}>
-              <h1>{title}</h1>
-              <img src={img} alt={title} />
+              <h2>{title}</h2>
+              <img className="image" src={img} alt={title} />
               <div className="btn-container">
-                <a href={demo}>
+                <a href={demo} target="_blank">
                   <button className="demo">Demo</button>
                 </a>
-                <a href={source}>
+                <a href={source} target="_blank">
                   <button className="source">Source</button>
                 </a>
               </div>
@@ -66,16 +67,52 @@ function ProjectList() {
 export default ProjectList;
 
 const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
   font-family: "Bakbak One", cursive;
   font-size: 14px;
 `;
+const Title = styled.div`
+  font-family: "Press Start 2P", cursive;
+  font-size: 24px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+`;
 
 const Projects = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 200px [col-start]);
+  grid-template-columns: repeat(4, 300px [col-start]);
+  @media (max-width: 770px) {
+    display: flex;
+    flex-direction: column;
+  }
   .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 20px;
+    .image {
+      width: 250px;
+      height: 150px;
+      border-radius: 10px;
+    }
+    .demo,
+    .source {
+      font-family: "Press Start 2P", cursive;
+      padding: 10px;
+      margin: 5px;
+      max-width: 100px;
+    }
+    .demo:hover,
+    .source:hover {
+      cursor: pointer;
+      background-color: gray;
+      color: white;
+    }
   }
 `;
 
@@ -83,8 +120,19 @@ const BtnContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   button {
+    margin: 0px 2.5px;
+    border-radius: 20px;
     font-size: 14px;
     padding: 5px 20px;
     font-family: "Press Start 2P", cursive;
+  }
+  @media (max-width: 770px) {
+    display: grid;
+    grid-template-columns: repeat(1, 300px [col-start]);
+  }
+  button:hover {
+    cursor: pointer;
+    background-color: gray;
+    color: white;
   }
 `;

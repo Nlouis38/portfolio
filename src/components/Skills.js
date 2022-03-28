@@ -17,43 +17,46 @@ function Skills() {
         <FrontEnd className="frontEnd" data-aos="fade-right">
           <div>
             Languages
-            <WebIcon />
+            <PsychologyIcon />
           </div>
           <ul>
             <li>Python</li>
-            <li>C++</li>
+            <li>C/C++</li>
             <li>Javascript</li>
             <li>HTML/CSS</li>
             <li>MATLAB</li>
+            <li>Arduino</li>
           </ul>
         </FrontEnd>
 
         <BackEnd data-aos="fade-right">
           <div>
-            Libaries
+            Data and Automation
             <StorageIcon />
           </div>
           <ul>
             <li>OpenCV</li>
             <li>Numpy</li>
             <li>Tensor Flow</li>
-            <li>React</li>
-            <li>Numpy</li>
+            <li>Embedded Systems</li>
+            <li></li>
+            <li></li>
           </ul>
         </BackEnd>
         <General data-aos="fade-right">
           <div>
-            General
-            <PsychologyIcon />
+            Web Development
+            <WebIcon />
           </div>
           <ul>
-            <li>Git Version Control</li>
-            <li>Problem Solving</li>
-            <li>VS Code</li>
-            <li>PyCharm</li>
-            <li>Web Hosting</li>
-            <li>Machine Leearning</li>
-            <li>Computer Vision</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Styled Components</li>
+            <li>Redux</li>
+            <li>Django</li>
+            <li>Flask</li>
+            <li></li>
+            <li></li>
           </ul>
         </General>
       </SkillsList>

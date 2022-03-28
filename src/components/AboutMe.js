@@ -12,15 +12,18 @@ function AboutMe() {
         <Info data-aos="zoom-in" data-aos-duration="2000">
           Hello everyone, my name is Nazir Louis I have formal education in
           Mechanical Engineering achieving a Bachelors degree from Georgia
-          Southern University. My passion has always been mechatronics and
-          automation, combining my knowledge of mechanical engineering,
-          electrical engineering, and programming to create automated systems
-          that make our lives easier. Currently, I work as a Test Engineer at
-          Home Depot where I manage and delegate the testing of Home Depot
-          Products. This also consists of building automated fixtures in order
-          to test the life cycle of a product as well as speed up and streamline
-          our testing process! Technologies that I use frequently consist of but
-          are not limited to Python, C++, Raspberry Pi, Arduino, and PLCs.
+          Southern University. My passion has always been programming, from
+          programming robotics and automated systems to even web and app
+          development, I simply just love to code. Currently, I work as a Test
+          Engineer at Home Depot where I manage and delegate the testing of Home
+          Depot Products. This also consists of building automated fixtures in
+          order to test the life cycle of a product as well as speed up and
+          streamline our testing process! Technologies that I use frequently
+          consist of but are not limited to Python, C++, and various types of
+          controllers. My goal is to pivot into a Software or Embedded Software
+          role in either Web/App Development, Data Science, or Embedded Systems.
+          If you would like to reach or get in contact with me my information is
+          below!
         </Info>
       </Text>
       <img src={Avi} data-aos="zoom-out" data-aos-duration="3000" />

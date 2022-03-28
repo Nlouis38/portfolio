@@ -1,51 +1,30 @@
+import PortfolioImage from "../images/Pixel3.jpg";
+import OpenCV from "../images/OpenCV.png";
+
 const projects = [
   {
     id: 1,
-    title: "Tesla Clone",
-    demo: "https://61c3985f4bd53f988b189ed1--boring-ritchie-aede20.netlify.app/",
-    source: "https://github.com/Nlouis38/tesla-clone",
-    img: "../images/TeslaImage.png",
-    category: "React",
+    title: "Digital Waterfall (C++)",
+    demo: "",
+    source: "https://github.com/Nlouis38/DigitalWaterFall",
+    img: OpenCV,
+    category: "High-Level Robotics",
   },
   {
     id: 2,
-    title: "Blackjack",
+    title: "Auto Object Measurement (Python)",
     demo: "",
-    source: "https://github.com/Nlouis38/BlackJack",
-    img: "",
-    category: "Games",
+    source: "https://github.com/Nlouis38/OpjectMeasure_1",
+    img: OpenCV,
+    category: "Machine Learning/AI",
   },
   {
     id: 3,
-    title: "Chrome Extension",
-    demo: "",
-    source: "https://github.com/Nlouis38/chrom-extension",
-    img: "",
-    category: "Javascript",
-  },
-  {
-    id: 4,
-    title: "Color Flipper",
-    demo: "",
-    source: "https://github.com/Nlouis38/color-flipper",
-    img: "",
-    category: "Javascript",
-  },
-  {
-    id: 5,
-    title: "Tour List",
-    demo: "",
-    source: "https://github.com/Nlouis38/01-birthday-reminder",
-    img: "",
-    category: "React",
-  },
-  {
-    id: 6,
-    title: "Birthday Reminder",
-    demo: "",
-    source: "https://github.com/Nlouis38/01-birthday-reminder",
-    img: "",
-    category: "React",
+    title: "My Portfolio (React)",
+    demo: "nazirlouis.com",
+    source: "https://github.com/Nlouis38/portfolio.git",
+    img: PortfolioImage,
+    category: "Web Development",
   },
 ];
 export default projects;
