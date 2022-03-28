@@ -46,7 +46,7 @@ function ProjectList() {
           const { id, title, demo, source, img, category } = project;
           return (
             <div className="projects" key={id}>
-              <h2>{title}</h2>
+              <h1>{title}</h1>
               <img className="image" src={img} alt={title} />
               <div className="btn-container">
                 <a href={demo} target="_blank">
@@ -85,10 +85,6 @@ const Title = styled.div`
 const Projects = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 300px [col-start]);
-  @media (max-width: 770px) {
-    display: flex;
-    flex-direction: column;
-  }
   .projects {
     display: flex;
     flex-direction: column;
@@ -98,7 +94,6 @@ const Projects = styled.div`
     .image {
       width: 250px;
       height: 150px;
-      border-radius: 10px;
     }
     .demo,
     .source {
