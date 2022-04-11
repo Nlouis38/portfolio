@@ -23,7 +23,7 @@ function Contact() {
         >
           <LinkedInIcon className="icon" />
         </a>
-        <a href="https://twitter.com/robowebdev" target="_blank">
+        <a href="https://twitter.com/data_daddy_" target="_blank">
           <TwitterIcon className="icon" />
         </a>
         <a href="https://github.com/Nlouis38" target="_blank">

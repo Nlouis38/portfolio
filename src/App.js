@@ -8,8 +8,6 @@ import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import TeslaImage from "./images/TeslaImage.png";
-import TeslaVideo from "./images/TeslaVideo.gif";
 import ProjectList from "./components/ProjectList";
 
 function App() {
@@ -25,7 +23,6 @@ function App() {
       <Landing />
       <Skills />
       <ProjectList />
-      <AboutMe />
       <Contact />
     </div>
   );

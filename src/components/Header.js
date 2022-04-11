@@ -30,15 +30,6 @@ function Header() {
     });
     setBurgerStatus(false);
   }
-  function aboutMeScroll() {
-    let skills = document.getElementById("aboutMeId");
-    skills.scrollIntoView({
-      behavior: "auto",
-      block: "center",
-      inline: "center",
-    });
-    setBurgerStatus(false);
-  }
   function contactScroll() {
     let skills = document.getElementById("contactId");
     skills.scrollIntoView({
@@ -57,7 +48,6 @@ function Header() {
         <RightMenu>
           <div onClick={skillsScroll}>Skills</div>
           <div onClick={projectsScroll}>Projects</div>
-          <div onClick={aboutMeScroll}>About Me</div>
           <div onClick={contactScroll}>Contact</div>
           <MenuIcon
             onClick={() => setBurgerStatus(true)}
@@ -72,7 +62,6 @@ function Header() {
         <List>
           <div onClick={skillsScroll}>Skills</div>
           <div onClick={projectsScroll}>Projects</div>
-          <div onClick={aboutMeScroll}>About Me</div>
           <div onClick={contactScroll}>Contact</div>
         </List>
       </BurgerNav>

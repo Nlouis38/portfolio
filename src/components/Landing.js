@@ -16,9 +16,7 @@ function Landing() {
           <Name>Nazir Louis</Name>
         </Hold>
         <SubHeading>
-          <div>Data Science</div>
-          <div>Web Development</div>
-          <div>Embedded Systems</div>
+          <div>Data Analyst</div>
         </SubHeading>
       </MainText>
       <Footer>

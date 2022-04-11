@@ -49,9 +49,6 @@ function ProjectList() {
               <h1>{title}</h1>
               <img className="image" src={img} alt={title} />
               <div className="btn-container">
-                <a href={demo} target="_blank">
-                  <button className="demo">Demo</button>
-                </a>
                 <a href={source} target="_blank">
                   <button className="source">Source</button>
                 </a>
