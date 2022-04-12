@@ -23,9 +23,10 @@ const projects = [
   },
   {
     id: 3,
-    title: "Covid-19 Case Studies",
+    title: "Covid-19 Case Studies (SQL)",
     demo: "",
-    source: "",
+    source:
+      "https://console.cloud.google.com/bigquery?sq=1026032554494:65c1cc7dd41a4700bc8e7172c3065f27",
     img: "https://www.fda.gov/files/covid19-1600x900.jpg",
     category: "SQL",
   },
