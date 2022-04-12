@@ -73,7 +73,6 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   color: white;
-  max-width: 100%;
   overflow: hidden;
   margin: 10px;
   height: 100vh;

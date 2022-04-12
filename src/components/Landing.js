@@ -40,8 +40,6 @@ const Container = styled.div`
   justify-content: flex-end;
   color: white;
   font-family: "Press Start 2P", cursive;
-  width: 100vw;
-  max-width: 100%;
   overflow: hidden;
   height: 100vh;
   max-height: 100%;

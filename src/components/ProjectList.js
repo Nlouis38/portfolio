@@ -82,6 +82,10 @@ const Title = styled.div`
 const Projects = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 300px [col-start]);
+  @media (max-width: 770px) {
+    display: grid;
+    grid-template-columns: repeat(1, 300px [col-start]);
+  }
   .projects {
     display: flex;
     flex-direction: column;
