@@ -21,39 +21,36 @@ function Skills() {
           </div>
           <ul>
             <li>Python</li>
+            <li>Javascript</li>
             <li>SQL</li>
-            <li>R</li>
             <li>C/C++</li>
-            <li>MATLAB</li>
-            <li>VBA</li>
+            <li>HTML</li>
+            <li>CSS</li>
           </ul>
         </FrontEnd>
 
         <BackEnd data-aos="fade-right">
           <div>
-            Data Analysis
-            <StorageIcon />
+            Libraries <StorageIcon />
           </div>
           <ul>
+            <li>React.js</li>
             <li>Pandas</li>
             <li>OpenCV</li>
             <li>Numpy</li>
-            <li>TidyVerse</li>
-            <li>Exel/Google Sheets</li>
-            <li>Big Query</li>
-            <li>MySQL</li>
+            <li>Matplotlib</li>
+            <li>SeaBorn</li>
           </ul>
         </BackEnd>
         <General data-aos="fade-right">
           <div>
-            Data Visualization
-            <WebIcon />
+            Computer Apps <WebIcon />
           </div>
           <ul>
             <li>Tableau</li>
-            <li>Seaborn</li>
-            <li>Excel Visualizations</li>
-            <li>Matplotlib</li>
+            <li>Excel</li>
+            <li>Google Sheets</li>
+            <li>Microsoft Office</li>
             <li></li>
             <li></li>
             <li></li>

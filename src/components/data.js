@@ -7,19 +7,19 @@ import ScrewExcel from "../images/ScrewExcel.xlsx";
 const projects = [
   {
     id: 1,
-    title: "Home Depot Staple Guns PLR",
+    title: "Home Depot Staple Guns PLR (Excel)",
     demo: "",
     source: StapleExcel,
     img: StapleImage,
-    category: "Excel",
+    category: "Data Analysis",
   },
   {
     id: 2,
-    title: "Home Depot Deckmate Screws PLR",
+    title: "Home Depot Deckmate Screws PLR (Excel)",
     demo: "",
     source: ScrewExcel,
     img: ScrewImage,
-    category: "Excel",
+    category: "Data Analysis",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const projects = [
     source:
       "https://console.cloud.google.com/bigquery?sq=1026032554494:65c1cc7dd41a4700bc8e7172c3065f27",
     img: "https://www.fda.gov/files/covid19-1600x900.jpg",
-    category: "SQL",
+    category: "Data Analysis",
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const projects = [
   },
   {
     id: 7,
-    title: "My Portfolio",
+    title: "My Portfolio (React.js)",
     demo: "nazirlouis.com",
     source: "https://github.com/Nlouis38/portfolio.git",
     img: PortfolioImage,
